@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal</title>
+    <link rel="stylesheet" href="jonathan styles.css">
+</head>
+
+<script type = "text/javascript">
+function slideOut(){
+  document.querySelector('.contact-container').classList.toggle('open')
+
+}
+
+function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 280;
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", reveal);
+
+reveal();
+
+
+</script>
+
+<!---------------------------------------------------------------------->
+<body>
+    <Header>
+       
+            <h1 class="header-title">   <span>Name</span>   </h1>
+         
+            <a class="btn" href="#home-id">Home</a>
+       
+            <a class="btn" href="#project-id">Project</a>
+        
+            <a class="btn" onClick="slideOut()">Contact</a>
+        
+    </Header>
+    
+    <!---------------------------------------------------------------------->
+    <div class="parent">
+        <div class="contact-container">
+            <h1 class="contact-header">EMAIL</h1>
+            <p class="contact-text">ItzClutchyz@gmail.com</p>
+            <h1 class="contact-header">GITHUB</h1>
+            <p class="contact-text">Merciless0</p>
+            <h1 class="contact-header">NUMBER</h1>
+            <p class="contact-text">857-361-8476</p>
+    </div>
+    </div>
+
+        <div id="home-id">
+            <div id="gradient-fill" >
+            </div>
+        </div>
+    <!---------------------------------------------------------------------->
+
+
+
+    <div class="intro-row">
+
+            <section class="asset reveal">
+        <video width = "900px"; height = "900px" class="video-1" autoplay muted loop>
+            <source src="/Assets/nyc film.mp4" type="video/mp4"/>
+        </video>
+            </section>
+
+
+
+        <section class="text reveal">
+            <div intro-text-container>
+                <h1 class="intro-text">Hello! This is my Portfolio website, where visitors may learn more about me as a colleague! 
+                    Be sure to traverse through the page with the button below the header!</h1>
+    
+                <h2 class="intro-text">My name is Jonathan Wu --- I'm a Chinese-American born here in Boston, I am 17 years old and this is my 3rd to 4th year here in AFH as a teen of the Creative Technology Studio.</h2>
+                
+                <h3 class="intro-text">A quick fact about me is that NY is my favorite city.</h3>
+            </div>
+        </div>
+        </section>
+
+    
+
+    <!---------------------------------------------------------------------->
+
+    <!-- <div class="circle-bg"></div> -->
+
+    <!---------------------------------------------------------------------->
+
+        <section class="asset reveal">
+    <div class="video-row" id="project-id">
+        
+        <iframe  height= "300" width = "500" src="https://www.youtube.com/embed/4xx95KJcJ2Q"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+   
+        <iframe  height= "300" width = "500"  src="https://www.youtube.com/embed/TXXnDzuOvxo"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>    
+
+    </div>
+        </section>
+
+    <!---------------------------------------------------------------------->
+
+    <section class="text reveal">
+    <div class="project-container-1">
+        
+        <a class="project-header" href="https://sparkar.facebook.com/ar-studio/">SparkAR</a>
+        <!-- <h1 class="project-header">SparkAR</h1> -->
+        <p class="project-text"> SparkAR is a software that Instragram uses to develop their popular face filters. 
+                                Its a simple --- drag and connect --- type of creation. But crucial when the platforms are consistently trending and refreshing itself.
+                                SparkAR is friendly to all types of ages above 12 and it doesn't get too complicated till code is required. 
+                                But you can still create the most entertaining face filters, all is needed is creativity. 
+                                Ontop here, are two videos created by DJS Create which I found friendly and simple enough to follow for a broad introduction of SparkAR!
+        </p>
+    </div>
+    </section>
+
+    <!---------------------------------------------------------------------->
+    
+    <div class="project-container-2">
+
+
+
+            <section class="asset reveal">
+        <a href="https://www.afhboston.org/"><img class="AFH-img" src="/Assets/AFH.jpeg" alt="AFH"></a>
+            </section>
+
+
+
+        <section class="text reveal">
+        <p class="project-text-2">In Creative Technology --- like every other studio --- we follow the norms which AFH embodies. Be <span class="bold-letter"> respectful</span>. Be <span class="bold-letter">cooperative</span>. Be <span class="bold-letter">creative</span>. Be <span class="bold-letter">accepting</span>.
+                                    Essentially, AFH is just one massive studio to really project your creativeness to test the limits of your capabilities. AFH is a place of opportunity. You focus on one studio of your choice. 
+                                    Then you focus on that sole value of yourself. Which adds more value and worth to your identity to form interest from companies when a job is available. 
+                                    As someone in the present moment, I've grown in this environment to a person of conscious, which comes with respect, awareness, responsibility and duty.
+                                    Though, I may not be the best of myself right now --- AFH had put me on my feet on the path that was the best through cooperation and communication.</p>
+        </section>
+
+
+
+    </div>
+
+    <div class="project-container-3">
+
+
+
+        <section class="asset reveal">
+             <div class="img-child">
+                <div class="img-up"><img src="/Assets/portfolio-paint.png"></div>
+                <div class="filler-img"></div>
+            </div>
+            <div class="img-child">
+                <div class="filler-img"></div>
+                <div class="img-down"><img src="/Assets/weather-app.png"></div>
+            </div>
+        </section>
+
+
+
+        <section class="text reveal">
+            <p class="project-text-3">Being in AFH, I've accumulated a lot of HTML & CSS skills, which I was able to project towards some web development. 
+            With the other 5 starting teens in Creative Technology at the time, we'd create websites either for client purposes or for practice; which we still do today.
+            Coding wasn't very much of my expertise, nor was it ever in my vision of my future. But I would be lying if I argued that coding wasn't fun sometimes. 
+            Just building websites and designing them was very much enjoyable as it kind of aligned with it being creative or artistic; which at the time, I was a decent artist myself.
+            Websites --- either if it was simple or difficult --- are always manageable; I find it similar to solving puzzles as the process of coding is always trialed and solved through error. 
+            These are some of the websites I've developed so far.</p>
+        </section>
+
+
+
+    </div>
+    <!---------------------------------------------------------------------->
+
+    <div class="project-container-4">
+
+
+
+        <section class="asset reveal">
+    <div class="img-row-top">
+        <img class="asset-img" src="/Assets/can.png">
+        <img class="asset-img" src="/Assets/soda-can.png">
+    </div>
+        </section>
+
+
+
+        <section class="text reveal">
+    <div class="text-container-4">
+        <p class="project-text-4">Here in Creative Technology, we also develop games. 
+            We started roughly around the end of last year, transitioning into the summer, we fully developed a collage of mini games; forming one big game.
+            I mainly helped developed assets as I wasn't the best at Js, therefore I created many animated & non-animated assets toward our games.         </p>
+    </div>
+         </section>
+
+
+
+         <section class="asset reveal">
+    <div class="img-row-bottom">
+        <img class="asset-img" src="/Assets/ocean-pixel.png">
+        <img class="asset-img" src="/Assets/pixel-chicken-leg.png">
+
+    </div>
+        </section>
+
+
+</div>
+
+<!---------------------------------------------------------------------->
+</body>
+</html>

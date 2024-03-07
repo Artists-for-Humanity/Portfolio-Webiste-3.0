@@ -1,0 +1,820 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+}
+
+@font-face {
+    font-family: 'Akaya Kanadaka';
+    src: url('AkayaKanadaka-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+
+    font-family: 'Inter';
+    src: url('Inter-VariableFont_slnt\,wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Architects Daughter';
+    src: url('ArchitectsDaughter-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pecita';
+    src: url('Pecita\ 400.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RobotoMono';
+    src: url('RobotoMono-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.custom-font1 {
+    font-family: 'Akaya Kanadaka', sans-serif;
+}
+
+.custom-font2 {
+    font-family: 'Inter', sans-serif;
+}
+
+.custom-font3 {
+    font-family: 'Architects Daughter', sans-serif;
+}
+
+.custom-font4 {
+    font-family: 'Pecita', sans-serif;
+}
+
+.custom-font5 {
+    font-family: 'RobotoMono', sans-serif;
+}
+
+.header1 {
+    position: relative;
+    width: 100%;
+    height: 100px;
+}
+
+.h1 {
+    flex-shrink: 0;
+    font-family: 'Inter';
+    font-size: 60px;
+    font-weight: 200;
+    color: black;
+    text-align: left;
+}
+
+.h2 {
+    margin-top: 75px;
+    justify-content: center;
+    font-family: 'Inter';
+    font-size: 42px;
+    color: black;
+    text-align: left;
+}
+
+.h3 {
+    padding: 30px 0px;
+    font-family: 'Inter';
+    font-size: 42px;
+    font-weight: bolder;
+    color: black;
+}
+
+.h4 {
+    padding: 10px 0px;
+    font-family: 'Inter';
+    font-size: 30px;
+    font-style: italic;
+    font-weight: bolder;
+    color: black;
+    margin-top: 25px;
+}
+
+.h5 {
+    padding-top: 30px;
+    padding-bottom: 15px;
+    font-family: 'Inter';
+    font-size: 32px;
+    font-weight: bolder;
+    color: black;
+    margin-top: 25px;
+}
+
+.mini-header {
+    width: 85vwvw;
+    margin-top: 20px;
+    justify-content: center;
+    align-content: center;
+    font-family: 'Inter';
+    font-size: 32;
+    color: black;
+}
+
+.body-text {
+    padding: 20px 0;
+    font-family: 'Inter';
+    font-size: 20px;
+    line-height: 200%;
+}
+
+.body-text li {
+    list-style: disc;
+    margin-left: 50px;
+}
+
+.note-text {
+    padding: 10px 0;
+    font-family: 'Inter';
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.wave {
+    animation-name: wave-animation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    transform-origin: 70% 70%;
+    display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% {
+        transform: rotate(0.0deg)
+    }
+
+    10% {
+        transform: rotate(14.0deg)
+    }
+
+    /* The following five values can be played with to make the waving more or less extreme */
+    20% {
+        transform: rotate(-8.0deg)
+    }
+
+    30% {
+        transform: rotate(14.0deg)
+    }
+
+    40% {
+        transform: rotate(-4.0deg)
+    }
+
+    50% {
+        transform: rotate(10.0deg)
+    }
+
+    60% {
+        transform: rotate(0.0deg)
+    }
+
+    /* Reset for the last half to pause */
+    100% {
+        transform: rotate(0.0deg)
+    }
+}
+
+.bgd-image {
+    background-image: url('Radial.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+}
+
+.container {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 40px 0px;
+}
+
+.initials {
+    display: flex;
+    width: 100px;
+    height: 75px;
+    justify-content: center;
+    text-align: center;
+    padding-left: 100px;
+    font-family: 'Pecita';
+    font-size: 50px;
+    font-weight: 400;
+    color: #AEC5E0;
+    -webkit-text-stroke: .75px black;
+}
+
+.navbar {
+    display: flex;
+    flex: 1;
+    justify-content: right;
+    align-items: right;
+    padding-right: 50px;
+}
+
+.navbar li {
+    margin: 0 10px;
+}
+
+.navbar li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 30px;
+    border: 1.5px solid black;
+    padding: 15px;
+    background: white;
+    font-family: 'Inter';
+    font-size: 20px;
+    color: black;
+}
+
+.navbar li a:hover {
+    background: #EAC9DD;
+}
+
+.center-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    scale: 75%;
+}
+
+.body-section {
+    margin-top: -25px;
+    display: flex;
+    width: 100%;
+    height: 75px;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    flex-shrink: 0;
+    font-family: 'Inter';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 200%;
+}
+
+.special-text {
+    margin: 10px;
+    font-family: 'Architects Daughter';
+    font-size: 42px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    color: white;
+}
+
+.click-container {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.click-box {
+    text-align: center;
+    padding: 20px;
+    border-radius: 40px;
+    border: 1.5px solid black;
+    background: white;
+    font-family: 'Inter';
+    font-size: 20px;
+    color: black;
+}
+
+.click-box:hover {
+    background-color: #EAC9DD;
+    color: black;
+}
+
+.grid-container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    max-width: 1250;
+    margin: 50px auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px;
+}
+
+.projects {
+    box-sizing: border-box;
+    border-radius: 40px;
+    border: 2px solid black;
+    width: 400px;
+    height: 400px;
+    flex-shrink: 0;
+    padding: 10px;
+    background: white;
+    align-items: center;
+    flex-shrink: 0;
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 18px;
+}
+
+.preview-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 375px;
+    height: 375px;
+}
+
+.preview-img img {
+    width: 32%;
+    height: 55%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 auto;
+    padding: 25px;
+    grid-gap: 25px;
+}
+
+@media (max-width: 1300px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 850px) {
+    .grid-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* Style for each grid item */
+.projects {
+    position: relative;
+    /* Create a positioning context for overlays */
+    box-sizing: border-box;
+    border-radius: 40px;
+    border: 2px solid black;
+    width: 400px;
+    height: 400px;
+    padding: 10px;
+    background: white;
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 18px;
+    overflow: hidden;
+    /* Hide overflowing overlay content */
+}
+
+/* Style for the image inside grid items */
+.preview-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    /* Create a positioning context for overlays */
+}
+
+.preview-img img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    /* Maintain aspect ratio and cover entire container */
+}
+
+/* Style for the overlay (hidden by default) */
+.title-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(30, 30, 30, 0.8);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.title-overlay p {
+    color: white;
+    font-size: 42px;
+}
+
+/* Hover state - show the overlay */
+.projects:hover .title-overlay {
+    opacity: 1;
+}
+
+.proj-page {
+    display: flex;
+    width: 85vwvw;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.projectTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 125px;
+    padding: 30px 0;
+}
+
+.projectTitle img {
+    max-width: 75px;
+    max-height: 75px;
+}
+
+.background-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.boxed-text {
+    width: 60vw;
+    padding: 30px 30px;
+    font-family: 'Inter';
+    font-size: 18px;
+    line-height: 200%;
+    border: 1px solid #8b8b8b;
+    border-radius: 50px;
+}
+
+.boxed-text li {
+    margin-left: 50px;
+    list-style-type: disc;
+}
+
+.boxed-text strong {
+    font-weight: bolder;
+    color: black;
+}
+
+.MBTA-text {
+    align-content: center;
+}
+
+.MBTA-1,
+.MBTA-2,
+.MBTA-3,
+.MBTA-4,
+.MBTA-5,
+.MBTA-6,
+.MBTA-7,
+.MBTA-8 {
+    display: inline-block;
+    text-align: left;
+    width: 80vw;
+}
+
+.grid2-container {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 25px;
+}
+
+.grid3-container {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 25px;
+}
+
+.machine-container {
+    position: relative;
+    display: inline-block;
+}
+
+.circle-buttons {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid black;
+    background-color: white;
+    font-size: 18px;
+    color: black;
+    cursor: pointer;
+}
+
+.circle-buttons:hover {
+    background-color: black;
+    color: white;
+
+}
+
+.b1 {
+    top: 305px;
+    left: 275px;
+}
+
+.b2 {
+    top: 450px;
+    left: 375px;
+}
+
+.b3 {
+    top: 400px;
+    left: 575px;
+}
+
+.b4 {
+    top: 550px;
+    left: 225px;
+}
+
+.b5 {
+    top: 675px;
+    left: 450px;
+}
+
+.bb1 {
+    margin-top: 400px;
+    left: 1035px;
+}
+
+.bb2 {
+    margin-top: 400px;
+    left: 1210px;
+}
+
+.bb3 {
+    margin-top: 400px;
+    left: 1300px;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 75%;
+    left: 52.5%;
+    width: 250px;
+    border: 2px solid black;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 16px;
+}
+
+.close {
+    position: absolute;
+    top: 7.5px;
+    right: 7.5px;
+    cursor: pointer;
+    font-size: 18px;
+    color: black;
+}
+
+.personas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.persona-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 60vw;
+    padding: 30px 30px;
+    border: 1px solid #8b8b8b;
+    border-radius: 50px;
+    margin: 25px;
+}
+
+
+.p-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.p-name {
+    font-family: 'Inter';
+    font-size: 24px;
+    margin-right: 50px;
+}
+
+.circle-frame {
+    width: 125px;
+    height: 125px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 15px 0;
+    margin-right: 50px;
+}
+
+.circle-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.p-bgd {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-right: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.p-labels {
+    margin-right: 35px;
+    font-family: 'Inter';
+    font-size: 14px;
+    color: #8b8b8b;
+    line-height: 240%;
+}
+
+.p-labels ul {
+    padding: 0;
+    margin: 0;
+}
+
+.p-info {
+    font-family: 'Inter';
+    font-size: 18px;
+    line-height: 200%;
+}
+
+.p-text {
+    margin: 5px 15px 15px;
+    font-family: 'Inter';
+    font-size: 18px;
+    line-height: 150%;
+}
+
+.p-text li {
+    list-style: disc;
+    margin-left: 25px;
+}
+
+.message {
+    width: 300px;
+    height: 50px;
+    margin: 25px auto;
+    font-family: 'Inter';
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+
+.about-page {
+    display: inline;
+}
+
+.about-container {
+    display: block;
+    flex-wrap: wrap;
+    width: 80vw;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.about-text {
+    display: flex;
+    float: left;
+    flex-direction: column;
+    margin: 15px 15px 0 0;
+}
+
+.text-and-image {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    margin-top: 25px;
+}
+
+.main-jpg {
+    width: 25%;
+    height: 25%;
+    margin-left: -100px;
+}
+
+.skills {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+}
+
+.skills li {
+    text-align: center;
+    border-radius: 30px;
+    border: 2px solid black;
+    padding: 15px;
+    background: #AEC5E0;
+    font-family: 'RobotoMono';
+    font-size: 16px;
+    color: black;
+    margin: 20px 10px;
+}
+
+.collage {
+    display: flex;
+    flex-direction: column;
+    width: 85vwvw;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.image-grid {
+    display: grid;
+    margin-top: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    justify-content: center;
+    align-content: center;
+}
+
+.image {
+    overflow: hidden;
+}
+
+.image img {
+    width: 110%;
+    height: 110%;
+    object-fit: cover;
+}
+
+.bottom-text {
+    display: flex;
+    margin: 25px 0 50px 0;
+    font-family: 'Inter';
+    font-size: 18px;
+    letter-spacing: 0.5px;
+}
+
+.contact-page {
+    display: flex;
+}
+
+.contact-container {
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Inter';
+    font-size: 24px;
+    line-height: 150%;
+    margin: 25px 0 0 100px;
+}
+
+.icons {
+    width: 50px;
+    height: auto;
+    margin-right: 50px;
+}

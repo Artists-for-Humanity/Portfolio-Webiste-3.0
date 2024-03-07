@@ -1,0 +1,280 @@
+@font-face {
+    font-family: Ruthie;
+    src: url(./assets/Ruthie-Regular.ttf);
+}
+
+
+
+html, body {margin: 0; height: 100%; overflow: hidden}
+
+.background{
+position: fixed;
+top: 0;
+left:0;
+width: 100%;
+height: 100%;
+background-image: url(./assets/Lofi-Boy2.gif);
+background-size: cover;
+background-position:30%;
+z-index: -1;
+}
+
+.triangle{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(95, 106, 136, 0.49);
+    clip-path: polygon(0 55%, 0% 100%, 100% 69%);
+    
+}
+
+.introContainer{
+    position: fixed;
+    left: 0;
+    top: 55%;
+    height: 22%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding:6%;
+    padding-top: 2%;
+}
+.intro{
+    color: #ffffff;
+    font-family: Inter;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    -webkit-text-stroke: 2px #6A3DE6;
+}
+.name{
+    color: #ffffff;
+    font-family: Inter;
+    font-size: 120px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 5.5px;
+    padding-left: 30%;
+    -webkit-text-stroke: 3px #6A3DE6;
+}
+
+/* <------------------- Making Grey Diamond --------------> */
+.diamondFrame1{
+    position: absolute;
+    width: 650px;
+    height: auto;
+    right: -17%;
+    top: 39%;
+    transition: 1s ease;
+    z-index: 3;
+}
+
+.greyDiamond{
+    position: absolute;
+    width: 600px;
+    height: auto;
+    right:-15%;
+    top:40%;
+    transition:  1s ease;
+    z-index: 2;
+}
+
+.diamondFrame1:hover{
+    filter:invert(100%) sepia(100%) saturate(0%) hue-rotate(181deg) brightness(107%) contrast(102%)drop-shadow(50px 50px 60px rgb(44, 41, 225));
+    cursor: pointer;
+}
+.home{
+    position: absolute;
+    bottom: 35%;
+    left: 47%;
+    color: #5d6786;
+    font-family: Inter;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 900;
+}
+/* <------------------- Making Grey Diamond --------------> */
+/* <------------------- Making Red Diamond ---------------> */
+.diamondFrame2{
+    position: absolute;
+    width: 350px;
+    height: auto;
+    left: 13%;
+    top: 10%;
+    z-index: 3;
+}
+
+.redDiamond{
+    position: absolute;
+    width: 330px;
+    height: auto;
+    left: 13.5%;
+    top: 10%;
+    z-index: 2;
+}
+
+.diamondFrame2:hover{
+    filter:invert(100%) sepia(100%) saturate(0%) hue-rotate(181deg) brightness(107%) contrast(102%)drop-shadow(50px 50px 60px rgba(255, 115, 80, 1));
+    cursor: pointer;
+}
+
+.about{
+    position: absolute;
+    top: 40%;
+    left: 16%;
+    color: #BE3C51;
+    font-family: Inter;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 900;
+}
+/* <------------------- Making Red Diamond ---------------> */
+/* <------------------- Making Blue Diamond --------------> */
+.diamondFrame3{
+    position: absolute;
+    width: 350px;
+    height: auto;
+    right: 13%;
+    top: 10%;
+    z-index: 3;
+}
+
+.blueDiamond{
+    position: absolute;
+    width: 330px;
+    height: auto;
+    right: 13.5%;
+    top: 10.5%;
+    z-index: 2;
+}
+
+.diamondFrame3:hover{
+    filter:invert(100%) sepia(100%) saturate(0%) hue-rotate(181deg) brightness(107%) contrast(102%)drop-shadow(50px 50px 60px rgba(44, 93, 169, 1));
+    cursor: pointer;
+}
+.resume{
+    position: absolute;
+    top: 40%;
+    right: 17%;
+    color: #2F73AA;
+    font-family: Inter;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 900;
+}
+/* <------------------- Making Blue Diamond --------------> */
+/* <------------------- Making Green Diamond -------------> */
+.diamondFrame4{
+    position: absolute;
+    width: 350px;
+    height: auto;
+    right: 13%;
+    bottom: 10%;
+    z-index: 3;
+}
+
+.greenDiamond{
+    position: absolute;
+    width: 330px;
+    height: auto;
+    right: 13.5%;
+    bottom: 11%;
+    z-index: 2;
+}
+
+.diamondFrame4:hover{
+    filter:invert(100%) sepia(100%) saturate(0%) hue-rotate(181deg) brightness(107%) contrast(102%)drop-shadow(50px 50px 60px rgba(44, 93, 169, 1));
+    cursor: pointer;
+}
+.projects{
+    position: absolute;
+    bottom: 5%;
+    right: 17.5%;
+    color: #88BB25;
+    font-family: Inter;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 900;
+}
+/* <------------------- Making Green Diamond -------------> */
+/* <------------------- Making Pink Diamond --------------> */
+.diamondFrame5{
+    position: absolute;
+    width: 350px;
+    height: auto;
+    left: 13%;
+    bottom: 10%;
+    z-index: 3;
+}
+
+.pinkDiamond{
+    position: absolute;
+    width: 330px;
+    height: auto;
+    left: 13.5%;
+    bottom: 11%;
+    z-index: 2;
+}
+
+.diamondFrame5:hover{
+    filter:invert(100%) sepia(100%) saturate(0%) hue-rotate(181deg) brightness(107%) contrast(102%)drop-shadow(50px 50px 60px rgb(231, 37, 125));
+    cursor: pointer;
+}
+.contacts{
+    position: absolute;
+    bottom: 5%;
+    left: 16.5%;
+    color: #EAA5C4;
+    font-family: Inter;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 900;
+}
+/* <------------------- Making Pink Diamond --------------> */
+
+.welcome{
+    color: #FFF;
+    font-family: Ruthie;
+    top: 5%;
+    right: 0;
+    font-size: 225px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 751.14px;
+    height: 182.845px;
+    transform: rotate(-11.664deg);
+    position: absolute;
+    z-index: 6;
+    text-shadow: 
+    0px 0px 67.603px #6A3DE6, 
+    0px 0px 135.205px #6A3DE6, 
+    0px 0px 473.218px #6A3DE6, 
+    0px 0px 946.436px #6A3DE6, 
+    0px 0px 1622.462px #6A3DE6, 
+    0px 0px 2839.309px #6A3DE6;
+
+}
+
+
+.buttonTriangle{
+position: absolute;
+width: 100%;
+height: 100%;
+}
+
+@keyframes fade{
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+.nav{
+    display: none;
+    /* opacity: 0; */
+    /* transition: 0.5s ease; */
+    animation: fade 1s;
+}
+

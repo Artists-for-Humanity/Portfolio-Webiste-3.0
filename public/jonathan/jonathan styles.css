@@ -1,0 +1,374 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+/* BODY */
+@font-face {
+    font-family: myFirstFont;
+    src: url(/Assets/pre.otf);
+}
+
+@font-face {
+    font-family: mySecondFont;
+    src: url(/Assets/after.otf)
+}
+
+@font-face{
+    font-family: myThirdFont;
+    src: url(/Assets/despair.ttf)
+}
+
+/* <!----------------------------------------------------------------------> */
+
+body{
+    margin: 0%;
+    padding: 0%;
+    cursor: url(https://ani.cursors-4u.net/symbols/sym-8/sym766.ani), url(https://ani.cursors-4u.net/symbols/sym-8/sym766.png), auto !important;
+}
+
+a:hover{
+    cursor: url(https://cur.cursors-4u.net/games/gam-4/gam307.ani), url(https://cur.cursors-4u.net/games/gam-4/gam307.png), auto !important;
+}
+
+/* <!----------------------------------------------------------------------> */
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
+  }
+
+  .reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+/* <!----------------------------------------------------------------------> */
+/* OUTSIDE HEADER PROPERTIES */
+
+Header{
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    position: fixed;
+    padding: 40px;
+    border-bottom: 3px dotted black;
+    box-shadow: 7px 7px 8px 2px  #c0c0c0;
+    width: 100%;
+    background-color:white;
+    height: 200px;
+    z-index: 999;
+}
+
+/* <!----------------------------------------------------------------------> */
+
+.contact-container{
+    position: fixed;
+    transition: transform .5s ease;
+    transform: translateX(100%);
+    background: linear-gradient(-45deg,#f8f8ff, #c0c0c0, #702963,#483248 );
+    background-size: 500% 500%;
+    animation: gradient 15s ease infinite;
+    top: 430px;
+    right: 0px;
+    padding: 40px;
+    border-radius: 10%;
+    border: black solid 3px;
+    z-index: 999;
+}
+
+.contact-container.open {
+    transform: translateX(0%);
+    margin-right: 40px;
+
+}
+
+.contact-text{
+    font-family: mySecondFont;
+}
+
+.contact-header{
+    font-family: myFirstFont;
+
+}
+
+/* <!----------------------------------------------------------------------> */
+/* INSIDE HEADER */
+
+.header-title:hover span{
+    display: none;
+}
+
+.header-title:hover:before{
+    content: "Jonathan";
+    font-family: mySecondFont;
+    font-size: 75px;
+}
+
+.header-title{
+    font-size: 100px;
+    margin: 0%;
+    font-family: myFirstFont;
+    padding-right: 490px;
+}
+
+/* <!----------------------------------------------------------------------> */
+/* BUTTONS */
+
+.btn{
+    all: unset;
+    font-size: 40px;
+    padding: 0px 25px 0px 25px;
+    font-family: mySecondFont;
+    margin-top: 20px;
+}
+
+.btn:hover{
+    text-decoration-line: line-through ;
+}
+
+/* <!----------------------------------------------------------------------> */
+/* GRADIENT */
+
+#gradient-fill {
+    width: 100%;
+    height: 1050px;
+      background: linear-gradient(-45deg,#f8f8ff, #c0c0c0, #702963,#483248 );
+      background-size: 500% 500%;
+      animation: gradient 15s ease infinite;
+  }
+  
+  @keyframes gradient {
+      0% {
+          background-position: 0% 50%;
+      }
+  
+      50% {
+          background-position: 100% 50%;
+      }
+  
+      100% {
+          background-position: 0% 50%;
+      }
+  }
+
+/* <!----------------------------------------------------------------------> */
+/* #1 */
+
+.intro-row{
+    display: flex;
+    flex-direction: row;
+    padding: 0px 40px 0px 40px;
+    align-items: center;
+}
+
+.video-1{
+    background-image: url('../../assets/silver stars.png');
+}
+
+.intro-text{
+    padding-left: 100px;
+    font-family: myThirdFont;
+    line-height: 40px;
+    letter-spacing: 3px;
+}
+
+/* <!----------------------------------------------------------------------> */
+/* #2 */
+
+.video-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 60px 40px 100px 40px;
+    justify-content: space-evenly;
+}
+
+.project-container-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+.project-header{
+    padding: 10px;
+    font-family: myFirstFont;
+    font-size: 70px;
+    text-decoration: none;
+    color: black;
+}
+
+.project-header:hover{
+    text-decoration-line: line-through;
+}
+
+.project-text{
+    text-align: center;
+    font-size: 20px;
+    font-family: myThirdFont;
+    width: 1000px;
+    line-height: 40px;
+    letter-spacing: 3px;
+}
+
+/* <!----------------------------------------------------------------------> */
+/* #3 */
+
+.AFH-img{
+    width: 750px;
+    height: 600px;
+}
+
+.AFH-img:hover{
+    box-shadow: 7px 7px 8px 2px  #c0c0c0;
+}
+
+.project-container-2{
+    display: flex; 
+    flex-direction: row-reverse;
+    padding: 60px 40px 100px 40px;
+    align-items: center;
+}
+
+.project-text-2{
+    font-size: 20px;
+    font-family: myThirdFont;
+    width: 1000px;
+    line-height: 40px;
+    letter-spacing: 3px;
+    text-align: right;
+    padding-right: 50px;
+}
+
+.bold-letter{
+    font-weight: bold;
+}
+
+/* <!----------------------------------------------------------------------> */
+/* #4 */
+
+.project-container-3{
+    padding: 100px 40px 100px 40px;
+    display: flex; 
+    flex-direction: row;
+}
+
+.img-up{
+    height: 400px;
+    width: 400px;
+    background: linear-gradient(-45deg,#f8f8ff, #c0c0c0, #702963,#483248 );
+    background-size: 500% 500%;
+    animation: gradient 15s ease infinite;
+}
+
+.img-down{
+    height: 400px;
+    width: 400px;
+    background: linear-gradient(-45deg,#f8f8ff, #c0c0c0, #702963,#483248 );
+    background-size: 500% 500%;
+    animation: gradient 15s ease infinite;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.filler-img{
+    height: 400px;
+    width: 400px;
+}
+
+.filler-img:hover{
+    background-image: url('../../assets/roblox stars.jpeg');
+}
+
+.img-child{
+    display: flex;
+    flex-direction: row;
+}
+
+.project-text-3{
+    font-size: 20px;
+    font-family: myThirdFont;
+    line-height: 40px;
+    letter-spacing: 3px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding-left: 40px;
+    padding-top: 110px;
+}
+
+/* <!----------------------------------------------------------------------> */
+/* #5 */
+.project-container-4{
+    padding: 100px 40px 100px 40px;
+}
+
+.img-row-top{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-right: 180px;
+}
+
+.img-row-bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 180px;
+}
+
+.project-text-4{
+    font-size: 20px;
+    font-family: myThirdFont;
+    line-height: 40px;
+    letter-spacing: 3px;
+    text-align: center;
+    width: 1000px;
+    padding: 40px 0px 40px 0px;
+    
+}
+
+
+
+.asset-img{
+    margin: 0px 40px 0px 40px;
+}
+
+.asset-img:hover{
+    box-shadow: 7px 7px 8px 2px  #c0c0c0;
+}
+
+.text-container-4{
+    display: flex;
+    justify-content: center;
+}
+
+/* <!----------------------------------------------------------------------> */
+/* CONTACT BUTTON */
+
+.contact-btn-container{
+    display: flex;
+    justify-content: center;
+    padding: 200px 0px 100px 0px;
+}
+
+.contact-btn{
+    width: 200px;
+    height: 200px;
+    border: 5px solid black;
+    all: unset;
+}
+
+.contact-btn:hover{
+    cursor: url(https://cur.cursors-4u.net/games/gam-4/gam307.ani), url(https://cur.cursors-4u.net/games/gam-4/gam307.png), auto !important;
+}
+
+/* <!----------------------------------------------------------------------> */

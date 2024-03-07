@@ -23,7 +23,7 @@ body {
     background-color: none;
     box-sizing: border-box;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: 20px;
     padding: 20px;
     padding-top: 12vh;
@@ -371,3 +371,22 @@ a#Jonathan-button {
     max-height: 100%;
     max-width: 100%;
   }
+
+.phaedra-text{
+    position:absolute;
+}
+  .phaedra-img{
+    align-self: center;
+    max-width: 150px;
+    transition: 0.3s;
+  }
+
+  .phaedra-img:hover{
+    scale: 1.2;
+    transition: ease-in-out;
+ 
+   
+    
+  }
+
+
