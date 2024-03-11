@@ -1,0 +1,347 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Pecita';
+  src: url('./phuong/Pecita\ 400.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.custom-font {
+  font-family: 'Pecita', sans-serif;
+}
+
+.style-1 {
+    position: relative;
+    padding: 0.1em 1em;
+    background: linear-gradient(135deg, rgba(255,0,0,.2), rgba(0,0,255,.2));
+    border: none;
+    border-radius: 10px;
+    font-size: 2em;
+    color: white;
+    text-shadow: 1px 2px 2px rgba(255,0,255,.2);
+    cursor: pointer;
+    text-align: center;
+    font-family: 'Bungee', cursive;
+    transition: all .2s linear;
+  }
+
+.style-1:hover {
+    text-shadow: 2px 3px 4px rgba(0,0,255,.2);
+    padding: 0.2em 1em;
+  }
+
+
+a#Jonathan-button {
+  padding: 2.5em;
+  background-image: url(/assets/closed.png);
+  background-color: white;
+  border: 5px solid black;
+  cursor: pointer;
+  transition: all 0.2s linear;
+  position: center;
+  animation: 3s infinite vertical alternate;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+}
+
+.zachButton {
+
+  border: 4px solid mediumslateblue;
+  background-color: cornflowerblue;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.2s linear;
+  position: center;
+  animation: 3s infinite vertical alternate;
+  /* text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px; */
+  /* position: relative; */
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+}
+
+.zachText {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  /* width:full; */
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /* height: full; */
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  text-align: center;
+
+}
+
+.zachButton .zachChannel {
+  visibility: hidden;
+}
+
+.zachButton:hover .zachChannel {
+  visibility: visible;
+  display: flex;
+  flex: 1;
+  margin-left: 10px;
+}
+
+.zachChannel {
+  display: block;
+
+  border: 2px solid black;
+  border-radius: 20px;
+  text-align: center;
+  align-self: center;
+  justify-content: center;
+  position: absolute;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 500;
+}
+
+.zachButton:hover {
+  opacity: 0.5;
+  display: block;
+  border: 1px solid mediumslateblue;
+  border-radius: 20px;
+  margin: 0;
+
+}
+
+.zachchannelImage {
+  width: 300px;
+  height: auto;
+
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.style-2 {
+  padding: 2.5em;
+  background-color: white;
+  border: 5px solid black;
+  box-shadow: 10px 5px yellow;
+  cursor: pointer;
+  font-family: 'Plaster', cursive;
+  color: rgba(0,0,0,.75);
+  transition: all .2s linear;
+  position: center;
+}
+
+.style-2:hover {
+  color: black;
+  padding: 2em;
+  box-shadow: 10px 5px rgba(170, 255, 0,1);
+}
+
+html, body {
+  margin: 0;
+}
+
+.grid-container {
+  margin: auto;
+  position: absolute;
+  width: 85%;
+  height: 80%;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 3px solid black;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 3%;
+  margin-right: 13%;
+}
+
+.bannerContainer{
+  position: absolute;
+  height: 15%;
+  width: 20%;
+  top: -60px;
+  left: -60px;
+  background-color: yellow;
+  text-align: end;
+}
+
+.banner {
+  position: absolute;
+  height: 100%;
+  width: 35%;
+  top: 0;
+  background-color: red;
+}
+
+.grid-item {
+  margin: 0;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+a#daniel-button {
+  --border: 5px;    /* the border width */
+  --slant: .3em;   /* control the slanted corners */
+  --color: #3b64cc; /* the color */
+  
+  font-size: 35px;
+  padding: 0.4em 1.2em;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  color: var(--color);
+  background: 
+     linear-gradient(to bottom left,var(--color)  50%,#0000 50.1%) top right,
+     linear-gradient(to top   right,var(--color)  50%,#0000 50.1%) bottom left;
+  background-size: calc(var(--slant) + 1.3*var(--border)) calc(var(--slant) + 1.3*var(--border));
+  background-repeat: no-repeat;
+  box-shadow:
+    0 0 0 200px inset var(--s,#0000),
+    0 0 0 var(--border) inset var(--color);
+  clip-path: 
+      polygon(0 0, calc(100% - var(--slant)) 0, 100% var(--slant),
+              100% 100%, var(--slant) 100%,0 calc(100% - var(--slant))
+             );
+  transition: color var(--t,0.3s), background-size 0.3s;
+}
+  
+a#daniel-button:focus-visible {
+  outline-offset: calc(-1*var(--border));
+  outline: var(--border) solid #000c;
+  clip-path: none;
+  background-size: 0 0;
+}
+a#daniel-button:hover,
+a#daniel-button:active{
+  background-size: 100% 100%;
+  color: #fff;
+  --t: 0.2s 0.1s;
+}
+
+a#daniel-button:active {
+  --s: #0005;
+  transition: none;
+
+}
+
+#jackyButton {
+position: relative;
+display: inline-block;
+padding: 28px 10px; 
+border: 2px solid black;
+border-radius: 5px;
+letter-spacing: 3px;
+cursor: pointer;
+zoom: 1.5;
+text-transform: uppercase;
+text-decoration: none;
+text-decoration-line: none;
+text-align: center;
+}
+
+#jackyButton::before {
+  content: '';
+  position: absolute;
+  top: 25%;
+  left: -3px;
+  right: -3px;
+  height: 50%;
+  background: white;
+  transition: transform 0.75s, background-color 1s;
+  transition-timing-function: cubic-bezier(.33, .01, 0, 1);
+
+  transform: scaleY(1);
+}
+
+#jackyButton:hover::before {
+  transform: scaleY(0);
+
+}
+
+#jackyButton::after {
+  content: '';
+  position: absolute;
+  left: 15%;
+  top: -3px;
+  bottom: -3px;
+  width: 70%;
+  background: white;
+  transition: transform 0.75s, background-color 1s;
+  transition-timing-function: cubic-bezier(.33, .01, 0, 1);
+
+  transform: scaleX(1);
+}
+
+#jackyButton:hover::after {
+  transform: scaleX(0)
+}
+
+#jackyButton:hover {
+  color: black;
+}
+
+#jackyText {
+  position: relative;
+  z-index: 5;
+  text-align: center;
+  color: lightpink;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+#phuongButton {
+  position: relative;
+  display: inline-block;
+  padding: 27.5px 0;
+  border-radius: 16px;
+  cursor: pointer;
+  zoom: 1.5;
+  text-align: center;
+  z-index: 5;
+  text-align: center;
+  background-color: #AEC5E0;
+  color: white;
+  border: none;
+  font-family: 'Pecita';
+  font-size: 32px;
+  font-weight: 200;
+  box-shadow: none;
+  -webkit-text-stroke: .75px black;
+}

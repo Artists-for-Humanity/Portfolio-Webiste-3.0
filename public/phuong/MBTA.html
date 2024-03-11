@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Phuong Thanh Nguyen</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./styles.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav>
+        <li class="custom-font1"><a class="initials" href="../phuong/phuong.html">ptn</a></li>
+        <ul class="custom-font2 navbar">
+            <li><a href="../phuong/projects.html">PROJECTS</a></li>
+            <li><a href="../phuong/about.html">ABOUT</a></li>
+            <li><a href="../phuong/contact.html">CONTACT</a></li>
+            <li><a href="./Nguyen, Phuong Thanh - Resume .pdf">RESUME</a></li>
+        </ul>
+    </nav>
+
+    <div class="proj-page">
+
+        <div class="projectTitle">
+            <img src="./MBTA/MBTA.png" alt="Logo">
+            <h3 class="h3">MBTA Kiosk Redesign Case Study</h3>
+        </div>
+
+        <div class="background-container" style="margin-top: -10;">
+            <div class="boxed-text">
+                <h4 class="h4" style="margin: -10 0 -25 0;">Background</h4>
+                <br>
+                <p style="margin-left: 25px;">This project is part of my coursework
+                    for ENP166, the Computer Interface Design course at Tufts University. The task involved redesigning
+                    the
+                    interface for the new fare structure ticketing machines.
+                </p>
+                <br>
+                <p style="margin-left: 25px;">Key components required:</p>
+                <ul style="margin-left: 25px;">
+                    <li>Include <strong>two card options</strong> to accommodate different travel modes</li>
+                    <li>Get information on how to get from <strong>where you are to where you want to go</strong>
+                        integrating T, bus
+                        lines, commuter rail, and ferries </li>
+                    <li>Get information about <strong>delays/construction/etc</strong>.</li>
+                    <li>Get <strong>information about the Boston area</strong> in general</li>
+                    <li>Provide information useful to both Boston natives and tourists</li>
+                </ul>
+                <br>
+                <p style="margin-left: 25px;">Affordances for:</p>
+                <ul style="margin-left: 25px;">
+                    <li>Language selection options.</li>
+                    <li>Features designed to assist individuals with low vision or vision impairments.</li>
+                    <li>Features tailored for individuals with mobility impairments.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="MBTA-text">
+            <h5 class="h5">Let's take a look at the MBTA Kiosk Machine . . .</h5>
+            <div class="MBTA-1">
+                <div class="grid2-container">
+                    <p class="note-text" style="margin-left: 75;">Current version (not drawn to scale)</p>
+                    <p class="note-text">Redesigned version (not drawn to scale)</p>
+                    <div class="machine-container">
+                        <img style="margin-left: 75;" src="./MBTA/Current version.png" width="600"
+                            alt="Current Version">
+                    </div>
+                    <div class="machine-container">
+                        <img src="./MBTA/Redesigned version.png" width="600" alt="Redesigned Version">
+                        <button class="b1 circle-buttons"
+                            onmouseover="showPopup('Verifies student/senior status for reduced fares via official student/senior ID')">1</button>
+                        <button class="b2 circle-buttons"
+                            onmouseover="showPopup('Pin-pad input moved closer to the touchscreen to protect the user’s privacy')">2</button>
+                        <button class="b3 circle-buttons"
+                            onmouseover="showPopup('Informs about accepted contactless payments')">3</button>
+                        <button class="b4 circle-buttons" onmouseover="showPopup('Press for assistance')">4</button>
+                        <button class="b5 circle-buttons"
+                            onmouseover="showPopup('The screen is placed at a height that is accessible to those in wheelchairs')">5</button>
+                    </div>
+                    <p></p>
+                    <p class="note-text" style="text-align: center; font-style: italic; width: 600;">Click to view
+                        information</p>
+                </div>
+
+                <div class="background-container">
+                    <div class="boxed-text">
+                        <h4 class="h4" style="margin: -10 0 -25 0;">Problems with the current version</h4>
+                        <br>
+                        <ul>
+                            <li>Demands users to have prior familiarity with the interface.</li>
+                            <li>Not conducive for non-native speakers.</li>
+                            <li>Lacks recent news/announcements from MBTA services.</li>
+                            <li>Features overwhelming and unclear buttons.</li>
+                            <li>Fails to offer reduced fares for students and seniors.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="MBTA-text">
+            <h5 class="h5">User Personas</h5>
+            <div class="MBTA-2">
+                <div class="personas">
+                    <div class="persona-container">
+                        <div class="p-left">
+                            <p class="p-name">Vivian Smith</p>
+                            <div class="circle-frame">
+                                <img src="./MBTA/Vivian Smith.jpg" alt="Stock Photo">
+                            </div>
+                            <div class="p-bgd">
+                                <div class="p-labels">
+                                    <ul>
+                                        <li>AGE</li>
+                                        <li>GENDER</li>
+                                        <li>STATUS</li>
+                                        <li>OCCUPATION</li>
+                                        <li>LOCATION</li>
+                                        <li>TECH&nbsp;LITERACY</li>
+                                        <li>PAYMENT</li>
+                                    </ul>
+                                </div>
+                                <div class="p-info">
+                                    <ul>
+                                        <li>78</li>
+                                        <li>Female</li>
+                                        <li>Single</li>
+                                        <li>Unemployed</li>
+                                        <li>Norton, MA</li>
+                                        <li>Low</li>
+                                        <li><img src="./MBTA/money.png" height="30"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="p-labels">BIO</p>
+                            <p class="p-text">Vivian lives alone in the suburb. Once in a while, she would like to visit
+                                her
+                                friends in the city. When her children are busy, she uses public transport to go into
+                                the
+                                city.</p>
+                            <p class="p-labels">MBTA NEEDS</p>
+                            <ul class="p-text">
+                                <li>Uses the commuter rail to travel between the suburb and the city</li>
+                                <li>Uses the buses and trains to meet up with friends</li>
+                            </ul>
+                            <p class="p-labels">CONCERNS</p>
+                            <ul class="p-text">
+                                <li>Not being able to navigate around modern technology</li>
+                                <li>Not a frequent commuter and prefers single-use passes</li>
+                                <li>Not being able to see texts or screens well</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="persona-container">
+                        <div class="p-left">
+                            <p class="p-name">James William</p>
+                            <div class="circle-frame">
+                                <img src="./MBTA/James William.jpeg" alt="Stock Photo">
+                            </div>
+                            <div class="p-bgd">
+                                <div class="p-labels">
+                                    <ul>
+                                        <li>AGE</li>
+                                        <li>GENDER</li>
+                                        <li>STATUS</li>
+                                        <li>OCCUPATION</li>
+                                        <li>LOCATION</li>
+                                        <li>TECH&nbsp;LITERACY</li>
+                                        <li>PAYMENT</li>
+                                    </ul>
+                                </div>
+                                <div class="p-info">
+                                    <ul>
+                                        <li>22</li>
+                                        <li>Male</li>
+                                        <li>Single</li>
+                                        <li>Student,&nbsp;Cat&nbsp;Cafe</li>
+                                        <li>Quincy, MA</li>
+                                        <li>High</li>
+                                        <li><img src="./MBTA/money.png" height="30">&nbsp;&nbsp;<img
+                                                src="./MBTA/atm-card.png" height="30"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="p-labels">BIO</p>
+                            <p class="p-text">James is a fourth-year college student from France. As a premed student,
+                                he is
+                                always on-the-go and prefers the most efficient route around the city. He has a house
+                                off-campus that he visits often, but he doesn’t have access to a car. In his free time,
+                                he
+                                wants to explore the city and its attractions with his friends and family.</p>
+                            <p class="p-labels">MBTA NEEDS</p>
+                            <ul class="p-text">
+                                <li>Uses the buses and trains to travel between school and work</li>
+                                <li>Uses the Amtrak to visit New York or Providence</li>
+                            </ul>
+                            <p class="p-labels">CONCERNS</p>
+                            <ul class="p-text">
+                                <li>Prefers to buy weekly or monthly passes to save time and money</li>
+                                <li>Replies on public transit to get everywhere</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="persona-container">
+                        <div class="p-left">
+                            <p class="p-name">Thuy Le</p>
+                            <div class="circle-frame">
+                                <img src="./MBTA/Thuy Le.jpg" alt="Stock Photo">
+                            </div>
+                            <div class="p-bgd">
+                                <div class="p-labels">
+                                    <ul>
+                                        <li>AGE</li>
+                                        <li>GENDER</li>
+                                        <li>STATUS</li>
+                                        <li>OCCUPATION</li>
+                                        <li>LOCATION</li>
+                                        <li>TECH&nbsp;LITERACY</li>
+                                        <li>PAYMENT</li>
+                                    </ul>
+                                </div>
+                                <div class="p-info">
+                                    <ul>
+                                        <li>34</li>
+                                        <li>Female</li>
+                                        <li>Married</li>
+                                        <li>Mother,&nbsp;Hair&nbsp;Stylist</li>
+                                        <li>Cambridge, MA</li>
+                                        <li>Medium</li>
+                                        <li><img src="./MBTA/money.png" height="30">&nbsp;&nbsp;<img
+                                                src="./MBTA/atm-card.png" height="30"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="p-labels">BIO</p>
+                            <p class="p-text">Thuy is married and has two children. She works full-time at a salon about
+                                3
+                                miles from home and does not drive. She recently moved to the U.S. and speaks limited
+                                English.</p>
+                            <p class="p-labels">MBTA NEEDS</p>
+                            <ul class="p-text">
+                                <li>Uses the buses and trains to travel between work and home</li>
+                                <li>Occasionally uses the trains to take her kids out on the weekends</li>
+                            </ul>
+                            <p class="p-labels">CONCERNS</p>
+                            <ul class="p-text">
+                                <li>Not being able to read complex English words</li>
+                                <li>Prefers to have her card pre-loaded to avoid missing the train</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="MBTA-text">
+            <h5 class="h5">User Flow</h5>
+            <div class="MBTA-3">
+                <img class="background-container" style="margin: -30 auto;" src="./MBTA/User Flow.png" width="1200">
+            </div>
+        </div>
+
+        <div class="MBTA-text">
+            <h5 class="h5">Kiosk Interface</h5>
+            <div class="MBTA-4">
+                <p class="body-text">With the user personas in mind, I have designed the MBTA Kiosk Interface to fulfill
+                    the needs and concerns of users.</p>
+                <div class="grid2-container" style="margin-bottom: -100;">
+                    <div class="body-text" style="width: 675" ;>
+                        <p>The main screen has . . .</p>
+                        <ul>
+                            <li>2 <strong>main </strong>functions</li>
+                            <li><strong>INFORMATION</strong> contains the latest announcements from the MBTA and a
+                                travel guide for both locals and tourists</li>
+                            <li><strong>CHARLIECARD</strong> allows users to add value to existing passes or purchase a
+                                new one</li>
+                            <li>
+                                3 <strong>accessibility</strong> options
+                                <ul>
+                                    <li>Adjust text size</li>
+                                    <li>Change language preference</li>
+                                    <li>Enable voice assistance</li>
+                                </ul>
+                            </li>
+                            <li><strong>HELP</strong> or <strong>?</strong> button</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <img src="./MBTA/Main Screen.png" width="600">
+                        <button class="bb1 circle-buttons">1</button>
+                        <button class="bb2 circle-buttons">2</button>
+                        <button class="bb3 circle-buttons">3</button>
+                    </div>
+                </div>
+
+                <div class="body-text" style="margin-top: 150;">
+                    <div>
+                        <button class="circle-buttons">1</button>
+                        <p style="margin-left: 100;">If the user chooses to increase the font size, the following
+                            changes will be made.</p>
+                        <div class="grid2-container" style="margin: 25 0 50 150 ; width: 70vw;">
+                            <img src="./MBTA/Font Size.png" width="500">
+                            <img src="./MBTA/Font Size 2.png" width="500">
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 20;">
+                        <button class="circle-buttons">2</button>
+                        <p style="margin-left: 100;">Users are given six language options to choose from.<br>
+                            The options were based on the most popular languages in the United States.</p>
+                        <div class="grid2-container" style="margin: 25 0 50 150 ; width: 70vw;">
+                            <img src="./MBTA/Language.png" width="500">
+                            <img src="./MBTA/Language 2.png" width="500">
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 20;">
+                        <button class="circle-buttons">3</button>
+                        <p style="margin-left: 100;">Selecting this button will turn on voice assistance.</p>
+                        <div class="grid2-container" style="margin: 25 0 50 150 ; width: 70vw;">
+                            <img src="./MBTA/Voice.png" width="500">
+                            <p
+                                style="margin-left: 25; width: 400; padding: 20; border: 2 solid black; border-radius: 20;">
+                                [Voice Assistant] Hello, this
+                                is the MBTA! To
+                                purchase a CharlieCard,
+                                please ...</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="MBTA-text" style="margin-top: -50;">
+            <h5 class="h5">How to Purchase a CharlieCard</h5>
+            <div class="MBTA-5">
+                <p class="body-text">The process for purchasing a new CharlieCard is similar to the existing design.
+                    <br>There are <strong>4 options</strong> for a card:
+                    <ul class="body-text" style="margin-top: -35;">
+                        <li>Bus/Subway</li>
+                        <li>Commuter Rail</li>
+                        <li>Savings Passes &rarr; reduced fares for weekly or monthy passes</li>
+                        <li>Add Custom Amount</li>
+                    </ul>
+                </p>
+                <div class="grid2-container" style="margin: 25 0 50 150; width: 70vw;">
+                    <img src="./MBTA/Ride Options.png" width="500">
+                    <img src="./MBTA/Ride Amounts.png" width="500">
+                </div>
+                <p class="body-text">Changes were made to how much value can be added to a CharlieCard for the
+                    Subway/Bus.
+                    <br>Users can chose between:</p>
+                <ul class="body-text" style="margin-top: -35;">
+                    <li>Selecting the specific number of Subway/Bus rides needed &rarr; for those who are familiar with
+                        the system</li>
+                    <li>Inputting a custom amount with OTHER AMOUNT &rarr; for those who are new / have a rough
+                        estimate of what they need</li>
+                </ul>
+                <p class="body-text">The prices for a single Subway or Bus ride is shown on the screen for the user’s
+                    reference and convenience.</p>
+
+                <div class="grid2-container">
+                    <div>
+                        <img src="MBTA/Payment.png" style="margin-left: 160; width: 500">
+                    </div>
+                    <div>
+                        <p class="body-text">
+                            At PAYMENT, the kiosk presents the user with:
+                            <ul class="body-text" style="margin-top: -35;">
+                                <li>Transit type (student, adult, or senior)</li>
+                                <li>Ticket type (ex. savings pass one day/week/month)</li>
+                                <li>Amount due</li>
+                                <li>Payment options</li>
+                                <li>Cancel</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+
+                <p class="body-text" style="margin-top: 35;">Currently, commuter rail passes are sold on board the
+                    trains. In the redesign, users will have the option to purchase their pass in advance. A notable
+                    addition is that the Kiosk will prompt the user to input their departure and arrival stations.
+                    Subsequently, it will provide an estimated travel time and the corresponding trip cost. This
+                    redesign calculates fares based on the distance traveled, ensuring that users are not charged a flat
+                    rate.</p>
+                <ul class="body-text" style="margin-top: -35;">
+                    <li>This feature is particularly advantageous for individuals who make short-distance commutes.</li>
+                    <li>For long-distance commuters, the price of the fare will flatten past a certain number of stops
+                        traveled.</li>
+                </ul>
+
+                <div class="grid2-container" style="margin: 25 0 50 150; width: 70vw;">
+                    <img src="MBTA/Commuter.png" width="500">
+                    <img src="MBTA/Commuter 2.png" width="500">
+                </div>
+
+            </div>
+        </div>
+
+        <div class="MBTA-text">
+            <h5 class="h5">A Perk for Frequent Commuters</h5>
+            <div class="MBTA-6">
+                <p class="body-text">The current system allows users to purchase unlimited one day/week/month passes.
+                    The new addition is the STUDENT SEMESTER PASS. If students forget their T card, they can just scan
+                    their ID to purchase a new one.</p>
+                <div class="grid2-container" style="margin: 25 0 50 150; width: 70vw;">
+                    <img src="MBTA/Savings.png" width="500">
+                    <img src="MBTA/Savings 2.png" width="500">
+                </div>
+            </div>
+        </div>
+
+        <div class="MBTA-text">
+            <h5 class="h5">Introducing MBTA’s Travel Guide</h5>
+            <div class="MBTA-7">
+                <p class="body-text">One of the primary project requirements was to incorporate a travel guide feature
+                    into the interface. This feature is designed to provide users with suggestions for places to
+                    explore, with a primary focus on Boston while also encompassing the greater Metro areas. Users can
+                    access this function under the <strong>INFORMATION</strong> section, which also includes the latest
+                    announcements from MBTA services, making it a valuable resource for both local residents and
+                    tourists.</p>
+                <div class="grid2-container" style="margin: 25 0 50 150; width: 70vw;">
+                    <img src="MBTA/Information.png" width="550">
+                    <p class="body-text">New here? Let’s see what Boston has for you!
+                        <br>Check out the most popular <strong>restaurants</strong> and <strong>entertainment</strong>.
+                    </p>
+                    <img src="MBTA/Recommendations.png" style="margin-top: 70;" width="550">
+                    <div>
+                        <p class="body-text">Each list is sorted by distance (based on your current location).
+                            <ul class="body-text" style="margin-top: -35;">
+                                <li>The preview includes details such as:</li>
+                                <li>Google reviews ratings</li>
+                                <li>Closing time</li>
+                                <li>T Line nearby</li>
+                                <li>Estimated time of travel</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="MBTA-text">
+            <h5 class="h5">No Map? No Problem!</h5>
+            <div class="MBTA-8">
+                <p class="body-text">If users have a specific destination in mind, the MAPS/NAVIGATION option can
+                    provide help with that.
+                    <br>In NAVIGATION, users can filter out the mode of transportation of their preference.
+                    <br>After inputting the origin and destination, the results will preview the:
+                </p>
+                <ul class="body-text" style="margin-top: -35;">
+                    <li>Estimated travel time</li>
+                    <li>Estimated time of arrival</li>
+                    <li>Routes and T line</li>
+                </ul>
+
+                <div class="grid2-container" style="margin: 25 0 50 150; width: 70vw;">
+                    <img src="MBTA/Navigation.png" width="500">
+                    <img src="MBTA/Maps.png" width="500">
+                </div>
+
+                <p class="body-text" style="text-align: center; margin-top: 25;">Additionally, if users want to take a
+                    look at the MBTA Maps, <strong>VIEW MAP</strong> will show an overview of . . .</p>
+                <div class="grid3-container" style="margin: 25 0 50 100; width: 70vw;">
+                    <img src="MBTA/Subway Map.png" width="400">
+                    <img src="MBTA/Ferry Map.png" width="400">
+                    <img src="MBTA/Commuter Map.png" width="400">
+                    <p class="note-text" style="margin-left: -45; text-align: center; font-style: italic;">Subway</p>
+                    <p class="note-text" style="margin-left: -40; text-align: center; font-style: italic;">Ferry</p>
+                    <p class="note-text" style="margin-left: -30; text-align: center; font-style: italic;">Commuter Rail
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="background-container" style="margin: 25 0 100 0;">
+            <div class="boxed-text">
+                <h4 class="h4" style="margin: -10 0 -25 0;">Reflection</h4>
+                <br>
+                <p>In the redesign, I addressed the issues present in the current MBTA Kiosk machine by introducing an
+                    interface that enhances user experience and ensures a seamless interaction with the system. As
+                    mentioned in the background, I successfully resolved the following concerns:</p>
+                <br>
+                <ul style="margin: -20 0">
+                    <li>Implemented language selection options</li>
+                    <li>Incorporated font size adjustments</li>
+                    <li>Added voice assistance functionality</li>
+                    <li>Installed a physical HELP button</li>
+                </ul>
+                <br>
+                <p>I am pleased with the project's outcome; however, if I were to consider making any improvements, I
+                    would challenge myself by reimagining the overall design to distinguish it from the existing MBTA
+                    design. To achieve this, I would conduct extensive research into transportation systems in other
+                    cities and countries, seeking inspiration for innovative concepts and designs.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup" class="popup">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <p id="popup-message"></p>
+    </div>
+
+    <script>
+        function showPopup(message) {
+            var popup = document.getElementById('popup');
+            var popupMessage = document.getElementById('popup-message');
+
+            popupMessage.textContent = message;
+            popup.style.display = 'block';
+        }
+
+        function closePopup() {
+            var popup = document.getElementById('popup');
+            popup.style.display = 'none';
+        }
+
+        // Close the popup when the mouse leaves the button
+        document.addEventListener('mouseout', function (event) {
+            if (!event.relatedTarget || !event.relatedTarget.closest('.circle-buttons')) {
+                closePopup();
+            }
+        });
+    </script>

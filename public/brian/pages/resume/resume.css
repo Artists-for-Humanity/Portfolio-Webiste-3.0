@@ -1,0 +1,110 @@
+@font-face {
+    font-family: Ruthie;
+    src: url(../../assets/Ruthie-Regular.ttf);
+}
+
+
+
+.background{
+position: fixed;
+top: 0;
+left:0;
+width: 100%;
+height: 100%;
+background-image: url(../../assets/resume.png);
+background-size: cover;
+background-position:30%;
+z-index: -1;
+    }
+
+
+.container{
+    position: absolute;
+    background-color:rgba(0, 23, 34, 1);
+    width: 30%;
+    height: auto;
+    top:5%;
+    right:8%;
+    padding: 30px;
+    border-radius: 50px;
+    border: 10px solid rgba(14, 90, 87, 1);
+    
+}
+
+
+.text{
+    color: #FFF;
+    font-family: Ruthie;
+    top: 5%;
+    right: 0;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color:rgba(21, 56, 111, 1);
+    text-shadow: 0 0 10px #2C5DA9, 0 0 20px #2C5DA9, 0 0 30px #2C5DA9;
+}
+
+
+.resume{
+    padding: 40px;
+    background-color: rgba(36, 78, 100, 1);
+    width: 80%;
+    height: auto;
+    border: 15px solid rgba(44, 93, 169, 1);
+    border-radius: 75px;
+    
+}
+
+.darken-overlay{
+    position: absolute;
+    top: 22.5%;
+    left: 12.65%;
+    width: 43.3%;
+    height: 46.7%;
+    padding: 100px;
+    border-radius: 20px;
+    background-color: rgb(0, 0, 0);
+    z-index: 6;
+    opacity: 0%;
+    transition: 1s;
+  }
+
+.darken-overlay:hover{
+    cursor: pointer;
+    opacity: 70%;
+}
+
+
+
+.diamondFrame{
+    position: absolute;
+    width: 250px;
+    height: auto;
+    left: -6%;
+    bottom: 12%;
+    transition: 0.5s ease;
+    z-index: 3;
+}
+
+.blueDiamond{
+    position: absolute;
+    width: 250px;
+    height: auto;
+    left: -6.25%;
+    bottom: 12%;
+    transition: 0.5s ease;
+    z-index: 2;
+}
+
+.diamondFrame:hover{
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(181deg) brightness(107%) contrast(102%) drop-shadow(50px 50px 60px rgba(44, 93, 169, 1));
+    cursor: pointer;  
+    transform: scale(1.25) 
+}
+
+.diamondFrame:hover ~ .blueDiamond{
+    transform: scale(1.25);
+}
