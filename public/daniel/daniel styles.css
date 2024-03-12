@@ -1,0 +1,292 @@
+html{
+    scroll-snap-type: y proximity;
+    scroll-behavior: smooth;
+    margin-left: auto;
+    margin-right: auto;
+
+    /* following design by Temani Afif from https://css-pattern.com/ */
+    --s: 180px;
+    --c1: #b6b6b6;
+    --c2: #ffffff;
+    --c3: #d9d9d9;
+         
+    --_g: var(--c3) 0 120deg,#0000 0;
+    background:
+        conic-gradient(from -60deg at 50% calc(100%/3),var(--_g)),
+        conic-gradient(from 120deg at 50% calc(200%/3),var(--_g)),
+        conic-gradient(from  60deg at calc(200%/3),var(--c3) 60deg,var(--c2) 0 120deg,#0000 0),
+        conic-gradient(from 180deg at calc(100%/3),var(--c1) 60deg,var(--_g)),
+        linear-gradient(90deg,var(--c1)   calc(100%/6),var(--c2) 0 50%,
+                                 var(--c1) 0 calc(500%/6),var(--c2) 0);
+    background-size: calc(1.732*var(--s)) var(--s);;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    /*background-color: #DBDBDB;*/
+    color: #3b64cc; 
+    /* color: #f21247; */
+    font-family: 'Montserrat', sans-serif;
+    overflow: auto; 
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+span {
+    margin: 0 100px;
+}
+
+span#d {
+    animation: fadeIn 1s both;
+}
+
+span#a {
+    animation: fadeIn 1s .1s both;
+}
+
+span#n {
+    animation: fadeIn 1s .2s both;
+}
+
+span#i {
+    animation: fadeIn 1s .3s both;
+}
+
+span#e {
+    animation: fadeIn 1s .4s both;
+}
+
+span#l {
+    animation: fadeIn 1s .5s both;
+}
+
+span#d1 {
+    animation: fadeIn 1s .9s both;
+}
+
+span#a1 {
+    animation: fadeIn 1s .8s both;
+}
+
+span#n1 {
+    animation: fadeIn 1s .7s both;
+}
+
+span#g {
+    animation: fadeIn 1s .6s both;
+}
+
+#home {
+
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    height: 100vh;
+    font-size: 175px;
+    /* letter-spacing: 200px; */
+    background-size: 300%;
+    background-image: linear-gradient(55deg, rgba(59,100,204,1) 0%, rgba(55,59,205,1) 32%, rgba(152,68,234,1) 72%, rgba(221,43,255,1) 100%);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    filter: drop-shadow(2px 2px 2px #333);
+    animation: move-bg 5s infinite 1.1s linear alternate;
+    scroll-snap-align: start;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    width: 100vw;
+    font-size: 40px;
+    font-style: italic;
+    z-index: 999;
+}
+
+nav a:hover {
+    text-shadow: #629bf5 0 0 4px;
+    margin-top: -5px;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    transition: all .2s;
+}
+
+a, a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+.item-1 {
+    animation: slideInTop 1s 1.35s both;
+}
+
+.item-2 {
+    animation: slideInTop 1s 1.55s both;
+}
+
+.item-3 {
+    animation: slideInTop 1s 1.75s both;
+}
+
+.item-4 {
+    animation: slideInTop 1s 1.95s both;
+}
+
+#about, #skills, #projects {
+    font-size: 35px;
+    height: 100vh;
+    scroll-snap-align: start;
+}
+
+#skills {
+    display: flex;
+    flex-direction: column;
+}
+
+.about_text, .skills_text {
+    position: absolute;
+    margin-top: 301px;
+    margin-left: 2%;
+    text-align: left;
+    display: inline;
+    background-color: rgba(230, 230, 230, 0.5);
+    width: 1782.9377px;
+}
+
+.skills_list {
+    list-style-type: none;
+    text-align: left;
+    margin-left: 2%;
+    padding: 0;
+    text-indent: 25px;
+    background-color: rgba(230, 230, 230, 0.5);
+}
+
+li {
+    display: block;
+    block-size: fit-content;
+}
+
+ul {
+    margin-top: 301px;
+    width: fit-content;
+}
+
+ul > li:before {
+    content: "- ";
+}
+
+.projects_text {
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 350px;
+    font-size: 50px;
+    background-color: rgba(230, 230, 230, 0.5);
+    animation: LeftandRight 7s linear infinite both;
+}
+
+.active {
+    font-weight: 600;
+    text-shadow: #3b64cc 0 0 2px;
+}
+
+@keyframes slideInTop {
+    from {
+        opacity: 0;
+        transform: translateY(-100%);
+        filter: blur(5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        filter: blur(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes LeftandRight {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(400%);
+    }
+}
+
+@keyframes move-bg {
+    from {
+        background-position: left;
+    }
+
+    to {
+        background-position: right;
+    }
+  }
+
+/* @keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+        filter: blur(5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+        filter: blur(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+        filter: blur(5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+        filter: blur(0);
+    }
+} */
+
+/* @keyframes slideInBottom {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+        filter: blur(5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        filter: blur(0);
+    }
+} */
