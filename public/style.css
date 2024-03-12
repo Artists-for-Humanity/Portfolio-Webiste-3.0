@@ -26,9 +26,11 @@ body {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: 20px;
     padding: 20px;
-    padding-top: 12vh;
+    padding-top: 30px;
+    /* padding-top: 12vh; */
     border: 3px solid black;
     overflow: auto; 
+    align-items: center;
 }
 
 .gridItem {
@@ -373,20 +375,20 @@ a#Jonathan-button {
   }
 
 .phaedra-text{
-    position:absolute;
+    transform: translateY(-80px);
+    color:white;
+    text-decoration:none;
 }
+
   .phaedra-img{
     align-self: center;
     max-width: 150px;
-    transition: 0.3s;
+    transition-duration: 1s;
+    /* transition-delay: 0.2s; */
   }
 
   .phaedra-img:hover{
-    scale: 1.2;
-    transition: ease-in-out;
- 
-   
-    
+    scale: 1.5;
   }
 
 
