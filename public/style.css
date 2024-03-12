@@ -383,7 +383,7 @@ a#Jonathan-button {
   .phaedra-img{
     align-self: center;
     max-width: 150px;
-    transition-duration: 1s;
+    transition-duration: 0.5s;
     /* transition-delay: 0.2s; */
   }
 
