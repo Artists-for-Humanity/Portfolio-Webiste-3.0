@@ -14,93 +14,203 @@ body{
     height: 100vh;
 }
 .browser{ 
-    border: solid 5px black;
+    /* border: solid 5px black; */
+    background-image: url("./images/background-frame-2.svg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
     /* border-radius: 10px ; */
-/* height: 80vh; */
-width: 75%;
+/* height: 85vh; */
+/* width: 65vw; */
+height: 800px;
+width: 1200px;
+position: absolute;
+display: flex;
+align-items: center;
 }
 .container{
-    background-color: white;
+    /* background-color: white; */
     display: flex;
 flex-direction: column;
 }
 .navbar{
-    background-color: rgb(255, 255, 255);
+    /* background-color: rgb(255, 255, 255); */
     display: flex;
-    margin-top: 3vh;
-    
+    align-items: flex-end;
+    /* flex-direction: row; */
+    /* height: 17vh; */
+    width: 98%;
+    /* margin: auto; */
+    position: absolute;
+top: 5%;
+left: 1%;
+    /* margin-top: 3vh; */
+   
 }
+.navitem{
+    /* background-color: #636363; */
+    /* color: white; */
+    /* width: 10vw; */
+    width: auto;
+    /* border-top: solid 5px black;
+    border-right: solid 5px black; */
+    font-family: "Irish Grover", system-ui;
+    /* height: 17vh; */
+    margin-bottom: auto;
+    text-align: center;
+    font-size: 14px;
+    display: flex;
+}
+
 .page{
-    background-color: #FFD1EF;
-    height: 72vh;
+    /* background-color: #FFD1EF; */
+    height: 50vh;
+    width: 40vw;
     font-family: "Irish Grover", system-ui;
     color: black;
-    text-align: center;
+    text-align:center;
     font-size: 100px;
     text-decoration: underline;
     display: flex;
     flex-direction: column;
     justify-content: center;
-
+    position: absolute;
 }
 
-.navitem{
-    background-color: #636363;
-    color: white;
-    width: 10vw;
-    border-top: solid 5px black;
-    border-right: solid 5px black;
-    font-family: "Irish Grover", system-ui;
-    height: 5vh;
-    text-align: center;
-    font-size: 25px;
 
-}
 .tstar{
     position: absolute;
-    top: 23%;
-    right: 15%;
+    top: -2%;
+    right: -15%;
     scale: 130%;
+    width: 13vw;
+    height: 19vh;
 }
 .bstar{
     position: absolute;
-    bottom: 13%;
+    bottom: -13%;
     scale: 130%;
-    left: 15%;
+    left: -15%;
+    width: 13vw;
+    height: 18vh;
 
 }
 .nhomepic{
     position: absolute;
-    top: 28%;
-    left: 18%;
+    top: 6%;
+    left: -11%;
     scale: 175%;
 }
 .tab1{
-    position: absolute;
-    top: 15%;
-    scale: 50%;
-}
+    /* position: absolute;
+    top: 14.3%;
+    scale: 128%;
+    right: 77.8%; */
+    align-self: last baseline;
+    height: auto;
+    background-image: url("./images/main-tab.png");
+    color: white;
+    padding-left: 3vh;
+    padding-right: 3vh;
+    height: 10vh;
+    background-repeat: no-repeat;
+    font-size: 38px;
+    /* scale: 100%; */
+  }
 .tab2{
-    position: absolute;
-    top: 20%;
-    scale: 50%;
+    align-self: last baseline;
+    height: auto;
+    background-image: url("./images/Tab-1.png");
+    color: white;
+    background-repeat: no-repeat;
+    padding-left: 1vh;
+    padding-right: 1vh;
+    height: 3vh;
+    font-size: 18px;
+    /* scale: 120%; */
 }
 .tab3{
-    position: absolute;
-    top: 25%;
-    scale: 50%;
+    align-self: last baseline;
+    height: auto;
+    background-image: url("./images/Tab-1.png");
+    color: white;
+    background-repeat: no-repeat;
+    padding-left: 1vh;
+    padding-right: 1vh;
+    height: 3vh;
+    font-size: 18px;
+    /* scale: 120%; */
 }
 .tab4{
-    position: absolute;
-    top: 30%;
-    scale: 50%;
+    align-self: last baseline;
+    height: auto;
+    background-image: url("./images/Tab-1.png");
+    color: white;
+    background-repeat: no-repeat;
+    padding-left: 1vh;
+    padding-right: 6vh;
+    height: 3vh;
+    font-size: 18px;
+    /* scale: 120%; */
 }
 .tab5{
-    position: absolute;
-    top: 35%;
-    scale: 50%;
-}
+    align-self: last baseline;
+    height: auto; background-image: url("./images/Tab-1.png");
+    color: white;
+    background-repeat: no-repeat;
+    padding-left: 1vh;
+    padding-right: 8vh;
+    height: 3vh;
+    font-size: 15.5px;
+    /* scale: 120%; */
+}/*
+.button {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;} 
+    */
 /* .selected{
    scale: ;
 
+
 } */
+
+@media screen and (min-width: 480px) {
+    body {
+      background-color: rgb(241, 138, 219);
+    }
+
+  }
+  .infostar{
+    position: absolute;
+    bottom: 5%;
+    scale: 130%;
+    left: 4%;
+    width: 13vw;
+    height: 18vh;
+  }
+  .cloud{
+    position: absolute;
+    bottom: 65%;
+    scale: 100%;
+    left: 10%;
+    width: 20vw;
+    height: 15vh;
+  }
+  .page{
+    /* background-color: #FFD1EF; */
+    height: 50vh;
+    width: 40vw;
+    font-family: "Irish Grover", system-ui;
+    color: black;
+    text-align:center;
+    font-size: 100px;
+    text-decoration: underline;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+}
