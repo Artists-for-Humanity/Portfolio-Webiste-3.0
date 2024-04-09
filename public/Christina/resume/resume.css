@@ -1,0 +1,32 @@
+body{
+    overflow: hidden;
+    background-color: deeppink;
+    width: 100%;
+}
+h1{
+    font-size: 6vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.backButton{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+.center{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.resume{
+    background-color: black;
+    padding: 1%;
+    border-radius: 30px;
+}
+.banner{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+}

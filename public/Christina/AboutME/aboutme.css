@@ -1,0 +1,56 @@
+@font-face {
+    font-family: Shrikhand;
+    src: url(../assets/Shrikhand-Regular.ttf);
+}
+
+body{
+    overflow: hidden;
+    background-color: deeppink;
+    width: 100%;
+}
+.backButton {
+    position: absolute;
+    margin-left: 30px;
+}
+h1{
+    font-size: 6vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+ .parent {
+    display: flex;
+    /* grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px; */
+    justify-content: space-evenly;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    }
+    
+    .div1 { grid-area: 1 / 1 / 2 / 3; }
+
+    .div2 { 
+        grid-area: 1 / 2 / 2 / 3; 
+        font-family: Shrikhand;
+    }
+
+    .div2 img {
+        position: relative;
+        z-index: 1;
+    }
+
+    .centered-text {
+        position: relative;
+        z-index: 2;
+    }
+
+
+.center{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
