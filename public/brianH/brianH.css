@@ -7,3 +7,20 @@ body{
     background-position:30%;
 
 }
+
+.name{
+    color: hsla(0, 0%, 100%, 0);
+    font-family: Inter;
+    font-size: 200px;
+    font-style: normal;
+    font-weight: 800;
+    letter-spacing: 5.5px;
+    -webkit-text-stroke: 3px #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+
+
+
+}
