@@ -203,7 +203,7 @@ a {
 }
 
 
-.button-name{
+/* .button-name{
   width:25vw;
   height:25vw;
   background-size: 25vw;
@@ -214,7 +214,7 @@ a {
 .button-name:hover{
   background-image: url("./button-images/mine-box.png");
   transform: scale(1.1);
-}
+} */
 
 
 
