@@ -219,11 +219,11 @@ img {
         top: 0vw;
     }
 
-    .line-1{
-        /* position: absolute;
+    /* .line-1{
+        /position: absolute;
         top: 7vh;
-        left: 28vw; */
-    }
+        left: 28vw; 
+    } */
 
     .line-container{
         display: flex;
