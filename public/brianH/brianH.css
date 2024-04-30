@@ -1,30 +1,30 @@
-.home-bg{
+.home-bg {
     position: fixed;
     top: 0;
-    left:0;
+    left: 0;
     width: 100%;
     height: 100%;
     background-image: url(assets/background.png);
     background-size: cover;
-    background-position:30%;
+    background-position: 30%;
 
 }
 
-.project-bg{
+.project-bg {
     position: fixed;
     top: 0;
-    left:0;
+    left: 0;
     width: 100%;
     height: 100%;
     background-image: url(./assets/Project-backgroud.png);
     background-size: cover;
-    background-position:30%;
+    background-position: 30%;
 
 }
 
 
 
-.name{
+.name {
     color: hsla(0, 0%, 100%, 0);
     font-family: Inter;
     font-size: 200px;
@@ -35,22 +35,23 @@
     display: flex;
     align-items: center;
     justify-content: center;
- 
+
 
 
 
 }
-.nav-items{
+
+.nav-items {
     display: flex;
- justify-content: space-between; 
- padding-left: 30vw;
- padding-right: 30vw;
+    justify-content: space-between;
+    padding-left: 30vw;
+    padding-right: 30vw;
 
 
 
 }
 
-.intro{
+.intro {
     color: hsla(0, 0%, 100%, 0);
     font-family: Inter;
     font-size: 200px;
@@ -63,7 +64,7 @@
     justify-content: center;
 }
 
-.Chess-piece{
+.Chess-piece {
     width: 100px;
     height: 100px;
 
