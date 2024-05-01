@@ -1,0 +1,445 @@
+html {
+  width: 100%;
+  height: 100%;
+  font-size: 10vh;
+}
+body {
+  display: flex;
+  background-color: rgba(147, 112, 216, 0.529);
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 100%;
+  font-family: "Lilita One", sans-serif;
+  margin: 0px;
+}
+
+.bg {
+  display: grid;
+  z-index: 10;
+  grid-template-columns: repeat(7, minmax(60px, 120px));
+  grid-template-rows: repeat(7, minmax(60px, 120px));
+  width: 90vh;
+  min-width: 420;
+  max-width: 840px;
+  background-color: #a7df93;
+  aspect-ratio: 1;
+}
+
+.title {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  color: #755f45;
+  margin: 0px;
+}
+.serenity {
+  display: table;
+  grid-row: 2;
+  grid-column: 1/5;
+}
+
+.williams {
+  display: table;
+  grid-row: 3;
+  grid-column: 1/5;
+}
+
+.bg > div[class^="block"] {
+  display: table;
+  background-color: #f5d4a3;
+  aspect-ratio: 1;
+  text-align: center;
+  color: #9c8d6f;
+  font-size: 5vh;
+  box-shadow: 0px 0px 0px 5px #d3bc8f inset;
+}
+
+.bg > div[class^="button"] {
+  z-index: 100;
+  display: table;
+  text-align: center;
+  font-size: 10vh;
+  width: 100%;
+  height: 100%;
+  font-size: 5vh;
+  transition-property: all;
+  transition-duration: 1s;
+}
+
+.bg > div[class^="block"] > span[class^="inside"] {
+  display: table-cell;
+  vertical-align: middle;
+  transition-property: all;
+  transition-duration: 1s;
+}
+.bg > div[class^="button"] > a[class^="inside"] {
+  display: table-cell;
+  vertical-align: middle;
+  transition-property: all;
+  transition-duration: 1s;
+}
+
+a {
+  text-decoration: none;
+}
+
+.bg > div[class^="button"] > a:hover::before {
+  content: "";
+}
+.bg > div[class^="button"] > a:before {
+  content: "X";
+}
+
+.insideTitle {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+
+.button1 {
+  grid-row: 3;
+  grid-column: 6;
+  background-color: #7485b0;
+  color: #72a2ff;
+  box-shadow: 0px 0px 0px 5px #72a2ff inset;
+}
+.button1:hover {
+  grid-row: 3;
+  grid-column: 6/8;
+}
+
+.button3:hover {
+  grid-row: 5;
+  grid-column: 5/7;
+}
+.bg > div> a:link {
+  color: inherit;
+  text-decoration: none;
+}
+.bg > div > a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+.bg > div > a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+.bg > div[class="button1"] > a:hover::after {
+  color: #72a2ff;
+  content: "Gym Cat";
+}
+
+.button2 {
+  grid-row: 4;
+  grid-column: 6;
+  background-color: #82ce8a;
+  color: #bfed3c;
+  box-shadow: 0px 0px 0px 5px #bfed3c inset;
+}
+.button2:hover {
+  grid-row: 4;
+  grid-column: 6/8;
+}
+
+.bg > div[class="button2"] > a:hover::after {
+  content: "Unity Dev";
+}
+
+.button3 {
+  grid-row: 5;
+  grid-column: 5;
+  background-color: #fca5d4;
+  color: #e1527d;
+  box-shadow: 0px 0px 0px 5px #e1527d inset;
+}
+.button3:hover {
+  grid-row: 5;
+  grid-column: 5/8;
+}
+
+
+.bg > div[class="button3"] > a:hover::after {
+  color: #e1527d;
+  content: "Epic Minesweeper";
+}
+
+.button4 {
+  grid-row: 6;
+  grid-column: 3;
+  background-color: #988ddd;
+  color: #7266bd;
+  box-shadow: 0px 0px 0px 5px #7266bd inset;
+}
+.button4:hover {
+  grid-row: 6;
+  grid-column: 3/5;
+}
+
+
+.bg > div[class="button4"] > a:hover::after {
+  color: #7266bd;
+  content: "About Me";
+}
+.button5 {
+  grid-row: 7;
+  grid-column: 2;
+  background-color: #332d79;
+  color: #3e71bf;
+  box-shadow: 0px 0px 0px 5px #3e71bf inset;
+}
+.button5:hover {
+  
+  grid-row: 7;
+  grid-column: 2/4;
+}
+
+
+.bg > div[class="button5"] > a:hover::after {
+  color: #3e71bf;
+  content: "Willy Cat";
+}
+
+
+/* .button-name{
+  width:25vw;
+  height:25vw;
+  background-size: 25vw;
+  background-image: url("./button-images/name-box.png");
+  transition-property: all;
+  transition-duration: 0.5s;
+}
+.button-name:hover{
+  background-image: url("./button-images/mine-box.png");
+  transform: scale(1.1);
+} */
+
+
+
+/* row1 */
+.blockr1c1 {
+  grid-row: 1;
+  grid-column: 1;
+}
+
+.blockr1c2 {
+  grid-row: 1;
+  grid-column: 2;
+}
+
+.blockr1c3 {
+  grid-row: 1;
+  grid-column: 3;
+}
+
+.blockr1c4 {
+  grid-row: 1;
+  grid-column: 4;
+}
+
+.blockr1c5 {
+  grid-row: 1;
+  grid-column: 5;
+}
+
+.blockr1c6 {
+  grid-row: 1;
+  grid-column: 6;
+}
+
+.blockr1c7 {
+  grid-row: 1;
+  grid-column: 7;
+}
+
+.blockr1c8 {
+  grid-row: 1;
+  grid-column: 8;
+}
+
+.blockr1c9 {
+  grid-row: 1;
+  grid-column: 9;
+}
+
+.blockr2c1 {
+  grid-row: 2;
+  grid-column: 1;
+}
+
+.blockr2c2 {
+  grid-row: 2;
+  grid-column: 2;
+}
+
+.blockr2c3 {
+  grid-row: 2;
+  grid-column: 3;
+}
+
+.blockr2c4 {
+  grid-row: 2;
+  grid-column: 4;
+}
+
+.blockr2c5 {
+  grid-row: 2;
+  grid-column: 5;
+}
+
+.blockr2c6 {
+  grid-row: 2;
+  grid-column: 6;
+}
+
+.blockr2c7 {
+  grid-row: 2;
+  grid-column: 7;
+}
+
+.blockr2c8 {
+  grid-row: 2;
+  grid-column: 8;
+}
+
+.blockr3c1 {
+  grid-row: 3;
+  grid-column: 1;
+}
+
+.blockr3c2 {
+  grid-row: 3;
+  grid-column: 2;
+}
+
+.blockr3c3 {
+  grid-row: 3;
+  grid-column: 3;
+}
+
+.blockr3c4 {
+  grid-row: 3;
+  grid-column: 4;
+}
+
+.blockr3c5 {
+  grid-row: 3;
+  grid-column: 5;
+}
+
+.blockr3c6 {
+  grid-row: 3;
+  grid-column: 6;
+}
+
+.blockr3c7 {
+  grid-row: 3;
+  grid-column: 7;
+}
+
+.blockr4c1 {
+  grid-row: 4;
+  grid-column: 1;
+}
+
+.blockr4c2 {
+  grid-row: 4;
+  grid-column: 2;
+}
+
+.blockr4c3 {
+  grid-row: 4;
+  grid-column: 3;
+}
+
+.blockr4c4 {
+  grid-row: 4;
+  grid-column: 4;
+}
+
+.blockr4c5 {
+  grid-row: 4;
+  grid-column: 5;
+}
+
+.blockr4c6 {
+  grid-row: 4;
+  grid-column: 6;
+}
+
+.blockr5c1 {
+  grid-row: 5;
+  grid-column: 1;
+}
+
+.blockr5c2 {
+  grid-row: 5;
+  grid-column: 2;
+}
+
+.blockr5c3 {
+  grid-row: 5;
+  grid-column: 3;
+}
+
+.blockr5c4 {
+  grid-row: 5;
+  grid-column: 4;
+}
+
+.blockr5c5 {
+  grid-row: 5;
+  grid-column: 5;
+}
+
+.blockr5c6 {
+  grid-row: 5;
+  grid-column: 6;
+}
+
+.blockr6c1 {
+  grid-row: 6;
+  grid-column: 1;
+}
+
+.blockr6c2 {
+  grid-row: 6;
+  grid-column: 2;
+}
+
+.blockr6c3 {
+  grid-row: 6;
+  grid-column: 3;
+}
+
+.blockr6c4 {
+  grid-row: 6;
+  grid-column: 4;
+}
+
+.blockr7c1 {
+  grid-row: 7;
+  grid-column: 1;
+}
+
+.blockr7c2 {
+  grid-row: 7;
+  grid-column: 2;
+}
+
+.blockr8c1 {
+  grid-row: 8;
+  grid-column: 1;
+}
+
+.blockr8c2 {
+  grid-row: 8;
+  grid-column: 2;
+}
+
+.blockr9c1 {
+  grid-row: 9;
+  grid-column: 1;
+}
