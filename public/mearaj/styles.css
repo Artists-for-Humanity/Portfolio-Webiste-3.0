@@ -1,18 +1,174 @@
-@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Italianno&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Italianno&family=Jacques+Francois&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Italianno&family=Jacques+Francois&family=Rubik+Moonrocks&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&family=Amita:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arapey:ital@0;1&display=swap");
+
+.arapey-regular-italic {
+  font-family: "Arapey", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.arapey-regular-italic {
+  font-family: "Arapey", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.arapey-regular-italic {
+  font-family: "Arapey", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.amaranth-regular {
+  font-family: "Amaranth", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: black;
+  font-size: 150px;
+  margin-right: -10vw;
+  margin-top: 8vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.amita-bold {
+  font-family: "Amita", serif;
+  font-weight: 700;
+  font-style: normal;
+  color: white;
+  margin-left: 12vw;
+  margin-top: -2vw;
+  font-size: 100px;
+  align-items: center;
+}
 
 .italianno-regular {
-    font-family: "Italianno", cursive;
-    font-weight: 400;
-    font-style: normal;
-  }  
+  font-family: "Italianno", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 150px;
+}
+.jacques-francois-shadow-regular {
+  font-family: "Jacques Francois Shadow", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 250px;
+  background: #00ffd1;
+  background: linear-gradient(to right, #00ffd1 51%, #cc00ff 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.rubik-moonrocks-regular {
+  font-family: "Rubik Moonrocks", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 200px;
+  color: black;
+}
+.rubik-moonrocks-regular:hover {
+  font-family: "Rubik Moonrocks", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 200px;
+  color: white;
+}
+
+header {
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  display: flex;
+  width: 100px;
+  justify-content: center;
+  text-align: center;
+}
+
+.navbar {
+  display: block;
+  position: fixed;
+  margin: 0;
+  padding-top: 100px;
+  padding: 1.5vh 2vw;
+  height: 6vh;
+  width: 100vw;
+  align-items: center;
+}
 
 .background {
-    background: url("https://i.pinimg.com/474x/65/8f/cd/658fcdab42adb831c9211b1e558587d1.jpg") no-repeat;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
-    
-    }
+  background: url("https://i.pinimg.com/474x/65/8f/cd/658fcdab42adb831c9211b1e558587d1.jpg")
+    no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+.dot {
+  height: 700px;
+  width: 700px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  margin-top: 15vh;
+  margin-left: 13vh;
+  background-image: url("images/My\ image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body {
+  display: flex;
+}
+.row {
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+}
+.circle {
+  color: white;
+  font-size: 50px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  display: inline-block;
+  height: 230px;
+  width: 230px;
+  background-color: lightseagreen;
+  margin-right: -18vh;
+  margin-left: 8vh;
+}
+
+.button-text {
+  margin-top: 72px;
+}
+.text-sport {
+  margin-top: 72px;
+}
+.text-me {
+  margin-top: 72px;
+}
+
+.background-color {
+  background-color: white;
+}
+
+
+
+
+.nav-background{
+height: 100vh;
+background-position: 0px 0px;
+background-image: linear-gradient(90deg, #A100FFFF 0%, #71C4FFFF 100%);
+
+}
