@@ -10,20 +10,6 @@
 
 }
 
-.project-bg{
-    position: fixed;
-    top: 0;
-    left:0;
-    width: 100%;
-    height: 100%;
-    background-image: url(./assets/Project-backgroud.png);
-    background-size: cover;
-    background-position:30%;
-
-}
-
-
-
 .name{
     color: hsla(0, 0%, 100%, 0);
     font-family: Inter;
@@ -66,6 +52,37 @@
 .Chess-piece{
     width: 100px;
     height: 100px;
+
+
+
+}
+.Projects-bg{
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100vh;
+    background-image: url(assets/Project-backgroud.png);
+    background-size: cover;
+    background-position:30%;
+
+}
+
+.Projects-Rectangles{
+    display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-row-gap: 50px;
+
+    /* justify-content: space-between;/ */
+    padding-left: 20vw;
+    padding-right: 20vw;
+    
+}
+
+.back-button{
+    position: absolute;
+
+
 
 
 
