@@ -166,9 +166,15 @@ body {
 
 
 
-.nav-background{
+/* .nav-background{
 height: 100vh;
 background-position: 0px 0px;
 background-image: linear-gradient(90deg, #A100FFFF 0%, #71C4FFFF 100%);
 
+} */
+
+.nav-background {
+  height: 100vh;
+background-position: 0px 0px;
+background-image: conic-gradient(90deg, #A100FFFF 0%, #71C4FFFF 100%);
 }
