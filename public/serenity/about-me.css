@@ -1,0 +1,283 @@
+html {
+  width: 100%;
+  height: 100%;
+  font-size: 100%;
+  font-family: "Lilita One", sans-serif;
+}
+body {
+  z-index: -1;
+  background-size: calc(100vw / 15) calc(100vw / 15);
+  background-image: linear-gradient(to right, #d079f9 2px, transparent 2px),
+    linear-gradient(to bottom, #d079f9 2px, transparent 2px);
+  background-color: #988ddd;
+  overflow: hidden;
+  margin: 0px;
+}
+#gym-cat {
+  background-size: calc(100vw / 15) calc(100vw / 15);
+  background-image: linear-gradient(to right, #72a2ff 2px, transparent 2px),
+    linear-gradient(to bottom, #72a2ff 2px, transparent 2px);
+  background-color: #7485b0;
+
+}
+#minesweeper {
+  background-size: calc(100vw / 15) calc(100vw / 15);
+  background-image: linear-gradient(to right, #e1527d 2px, transparent 2px),
+    linear-gradient(to bottom, #e1527d 2px, transparent 2px);
+  background-color: #fca5d4;
+}
+#willy-cat {
+  background-size: calc(100vw / 15) calc(100vw / 15);
+  background-image: linear-gradient(to right, #3e71bf 2px, transparent 2px),
+    linear-gradient(to bottom, #3e71bf 2px, transparent 2px);
+  background-color: #332d79;
+}
+#unity{
+  background-size: calc(100vw / 15) calc(100vw / 15);
+  background-image: linear-gradient(to right, #bfed3c 2px, transparent 2px),
+    linear-gradient(to bottom, #bfed3c 2px, transparent 2px);
+  background-color: #82ce8a;
+}
+
+.body-container {
+  scroll-snap-type: y mandatory;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  height: 100vh;
+  
+}
+
+.content {
+  background-color: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+a {
+  display: table-cell;
+  text-decoration: none;
+  vertical-align: middle;
+  font-size: calc(100vw / 20);
+}
+
+.sidebar {
+  display: flex;
+  align-self: flex-start;
+  width: 60px;
+  height: fill;
+}
+.sidebar> a:hover::after {
+  color: inherit;
+  content: "";
+}
+
+.nav-buttons {
+  display: grid;
+  position: fixed;
+  grid-template-rows: repeat(6, calc(100vw / 15));
+  grid-template-columns: repeat(6,calc(100vw / 15));
+  height: calc(100vw / 2);
+}
+.nav-buttons > div {
+  display: table;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  font-size: 3vh;
+}
+.nav-buttons> a:hover::after {
+  font-size: 2vh;
+  color: inherit;
+  content: "";
+}
+
+.nav-buttons > div > a:hover::before {
+  content: "";
+}
+
+.nav-buttons > div:hover {
+  grid-column: 1/7;
+}
+.nav-buttons > div > a:before {
+  content: "X";
+}
+
+.home {
+  grid-row: 1;
+  background-color: #f5d4a3;
+  color: #9c8d6f;
+}
+.home> a:hover::after {
+  color: inherit;
+  content: "";
+}
+
+.gym {
+  grid-row: 2;
+  background-color: #7485b0;
+  color: #72a2ff;
+}
+.gym> a:hover::after {
+  color: inherit;
+  content: "";
+}
+.unity {
+  grid-row: 3;
+  background-color: #82ce8a;
+  color: #bfed3c;
+}
+.unity> a:hover::after {
+  color: inherit;
+  content: "";
+}
+.unity> a:hover::after {
+  color: inherit;
+  content: "";
+}
+.mine {
+  grid-row: 4;
+  background-color: #fca5d4;
+  color: #e1527d;
+}
+.mine> a:hover::after {
+  color: inherit;
+  content: "";
+}
+
+.about-me {
+  grid-row: 5;
+  background-color: #988ddd;
+  color: #c27ef2;
+}
+.about-me> a:hover::after {
+  color: inherit;
+  content: "";
+}
+.willy {
+  grid-row: 6;
+  background-color: #332d79;
+  color: #3e71bf;
+}
+
+.willy> a:hover::after {
+  color: inherit;
+  content: "Willy Cat";
+}
+.gym> a:hover::after {
+  color: inherit;
+  content: "Gym Cat";
+}
+.mine> a:hover::after {
+  color: inherit;
+  content: "Minesweeper";
+}
+.about-me> a:hover::after {
+  color: inherit;
+  content: "About Me";
+}
+.unity> a:hover::after {
+  color: inherit;
+  content: "Unity Dev";
+}
+.home> a:hover::after {
+  width: max-content;
+  color: inherit;
+  content: "Home";
+}
+#here > a:hover::after{
+  width: max-content;
+  color: inherit;
+  content: "You are here!";
+}
+
+
+.nav-buttons > div> a:link {
+  color: inherit;
+  text-decoration: none;
+}
+.nav-buttons > div > a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+.nav-buttons > div > a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+.title-block {
+  display: flex;
+  scroll-snap-align: center;
+  /* justify-content: flex-end;
+  align-items: flex-end; */
+  width: 100%;
+  height: 100vh;
+  /* margin: 0px, 100px 0px 0px; */
+  align-items: flex-end;
+  justify-content: end;
+  align-items: end;
+
+  /* margin: 0px 100px 0px 55%; */
+}
+.title-container {
+  width: 100%;
+}
+.title {
+  margin: 0px 5% 5% 0px;
+  font-size: calc(55vmax / 5);
+  color: #fbfbfb;
+  text-align: end;
+}
+
+.chunk {
+  scroll-snap-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  border-radius: 10px;
+  width: 100vw;
+  /* margin: 10% 0px 10% 0px; */
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 30%;
+  padding: 10px;
+  color: white;
+  margin: 0px 20px 0px 0px;
+}
+
+
+#college {
+  margin: 10% 0px 10% 0px;
+}
+
+.content-title {
+  font-size: calc(45vh / 5);
+  justify-content: center;
+  width: max-content;
+  height: 30%;
+  margin: 0px;
+  font-family: "Koulen", sans-serif;
+}
+.content-text {
+  display: table-cell;
+  width: 100%;
+  font-size: 3vh;
+  font-family: "Karma", serif;
+  height: 100%;
+}
+.img-container {
+  width: 30%;
+  align-content: center;
+}
+
+.wrestling-img {
+  grid-column: 2;
+  width: 100%;
+  aspect-ratio: auto;
+}
