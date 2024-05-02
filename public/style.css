@@ -1,445 +1,417 @@
-@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Anta&display=swap");
 
-*{
-    font-family: "Anta", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+* {
+  font-family: "Anta", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 body {
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100%;
-    box-sizing: border-box;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .gridContainer {
-    height: 70vh;
-    width: 80%;
-    max-width: 100%;
-    background-color: none;
-    box-sizing: border-box;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-gap: 20px;
-    padding: 20px;
-    padding-top: 30px;
-    /* padding-top: 12vh; */
-    border: 3px solid black;
-    overflow: auto; 
-    align-items: center;
+  height: 70vh;
+  width: 80%;
+  max-width: 100%;
+  background-color: none;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 20px;
+  padding: 20px;
+  padding-top: 30px;
+  /* padding-top: 12vh; */
+  border: 3px solid black;
+  overflow: auto;
+  align-items: center;
 }
 
 .gridItem {
-    background-color: white;
-    padding: 20px;
-    text-align: center;
-    box-sizing: border-box;
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+  box-sizing: border-box;
 }
 
 .logo {
-    position: fixed;
-    top: 10%;
-    left: 7%;
-    display: flex;
-    align-items: center;
+  position: fixed;
+  top: 10%;
+  left: 7%;
+  display: flex;
+  align-items: center;
 }
 
 .logo img {
-    height: 100px;
-    margin: 0;
+  height: 100px;
+  margin: 0;
 }
 
 .logoImg {
-    width: auto;
-    margin-right: -5px;
+  width: auto;
+  margin-right: -5px;
 }
 
 .logoText {
-    width: auto;
-    margin-left: -5px;
+  width: auto;
+  margin-left: -5px;
 }
 
 .text {
-    position: absolute;
-    top: 18.5%;
-    right: 15%;
-    padding: 10px;
+  position: absolute;
+  top: 18.5%;
+  right: 15%;
+  padding: 10px;
 }
 
 @media (max-width: 600px) {
-    .gridContainer {
-        padding-top: 5vh;
-    }
+  .gridContainer {
+    padding-top: 5vh;
+  }
 
-    .logo {
-        position: static;
-        text-align: center;
-    }
+  .logo {
+    position: static;
+    text-align: center;
+  }
 
-    .logo img {
-        height: 80px;
-        margin: 0;
-    }
+  .logo img {
+    height: 80px;
+    margin: 0;
+  }
 
-    .text {
-        position: static;
-        top: auto;
-        right: auto;
-        margin-top: 10px;
-        text-align: center;
-    }
+  .text {
+    position: static;
+    top: auto;
+    right: auto;
+    margin-top: 10px;
+    text-align: center;
+  }
 }
 
 /* ADD BUTTONS BELOW */
 
 /*Serenity's Button*/
 
-#SerenityButton{
-    padding: 20%;
-    width: 100%;
-    height: 100%;
-    aspect-ratio: 1;
-    background-size: 100%; 
-    background-image: url("./serenity/button-images/name-box.png");
-    background-repeat: no-repeat;
-    transition-property: all;
-    transition-duration: 0.5s;
-    z-index: 1;
-  }
-  #SerenityButton:hover{
-    background-image: url("./serenity/button-images/mine-box.png");
-    aspect-ratio: 1;
-    padding: 21%;
-  }
-
-/* Vinh's Button*/
-
-#vinhBtn:hover {
-    background-color: #0bceaf;
-    color: white;
-    transition: .5s;
-    transform: translate(0%, -25%);
-    letter-spacing: 5px;
-  }
-  
-#vinhBtn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid #0bceaf;
-    border-radius: 50px;
-    background-color: white;
-    height: 5svh;
-    width: 100%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;
-    font-weight: lighter;
-    color: #0bceaf;
-    letter-spacing: 2px;
-    text-decoration: none;
+#SerenityButton {
+  padding: 20%;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1;
+  background-size: 100%;
+  background-image: url("./serenity/button-images/name-box.png");
+  background-repeat: no-repeat;
+  transition-property: all;
+  transition-duration: 0.5s;
+  z-index: 1;
+}
+#SerenityButton:hover {
+  background-image: url("./serenity/button-images/mine-box.png");
+  aspect-ratio: 1;
+  padding: 21%;
 }
 
 #phuongButton {
-    position: relative;
-    display: inline-block;
-    padding: 27.5px 0;
-    border-radius: 16px;
-    cursor: pointer;
-    zoom: 1.5;
-    text-align: center;
-    z-index: 5;
-    text-align: center;
-    background-color: #AEC5E0;
-    color: white;
-    border: none;
-    font-family: 'Pecita';
-    font-size: 32px;
-    font-weight: 200;
-    box-shadow: none;
-    -webkit-text-stroke: .75px black;
-    text-decoration: none;
-    width: 100%;
+  position: relative;
+  display: inline-block;
+  padding: 27.5px 0;
+  border-radius: 16px;
+  cursor: pointer;
+  zoom: 1.5;
+  text-align: center;
+  z-index: 5;
+  text-align: center;
+  background-color: #aec5e0;
+  color: white;
+  border: none;
+  font-family: "Pecita";
+  font-size: 32px;
+  font-weight: 200;
+  box-shadow: none;
+  -webkit-text-stroke: 0.75px black;
+  text-decoration: none;
+  width: 100%;
 }
 
 a#daniel-button {
-    --border: 5px; 
-    --slant: .3em;   
-    --color: #3b64cc; 
+  --border: 5px;
+  --slant: 0.3em;
+  --color: #3b64cc;
 
-    font-size: 35px;
-    padding: 0.4em 1.2em;
-    border: none;
-    cursor: pointer;
-    font-weight: bold;
-    color: var(--color);
-    background: 
-        linear-gradient(to bottom left,var(--color)  50%,#0000 50.1%) top right,
-        linear-gradient(to top   right,var(--color)  50%,#0000 50.1%) bottom left;
-    background-size: calc(var(--slant) + 1.3*var(--border)) calc(var(--slant) + 1.3*var(--border));
-    background-repeat: no-repeat;
-    box-shadow:
-        0 0 0 200px inset var(--s,#0000),
-        0 0 0 var(--border) inset var(--color);
-    clip-path: 
-        polygon(0 0, calc(100% - var(--slant)) 0, 100% var(--slant),
-            100% 100%, var(--slant) 100%,0 calc(100% - var(--slant))
-        );
-    transition: color var(--t,0.3s), background-size 0.3s;
-    text-decoration: none;
+  font-size: 35px;
+  padding: 0.4em 1.2em;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  color: var(--color);
+  background: linear-gradient(to bottom left, var(--color) 50%, #0000 50.1%) top
+      right,
+    linear-gradient(to top right, var(--color) 50%, #0000 50.1%) bottom left;
+  background-size: calc(var(--slant) + 1.3 * var(--border))
+    calc(var(--slant) + 1.3 * var(--border));
+  background-repeat: no-repeat;
+  box-shadow: 0 0 0 200px inset var(--s, #0000),
+    0 0 0 var(--border) inset var(--color);
+  clip-path: polygon(
+    0 0,
+    calc(100% - var(--slant)) 0,
+    100% var(--slant),
+    100% 100%,
+    var(--slant) 100%,
+    0 calc(100% - var(--slant))
+  );
+  transition: color var(--t, 0.3s), background-size 0.3s;
+  text-decoration: none;
 }
 
 a#daniel-button:focus-visible {
-    outline-offset: calc(-1*var(--border));
-    outline: var(--border) solid #000c;
-    clip-path: none;
-    background-size: 0 0;
+  outline-offset: calc(-1 * var(--border));
+  outline: var(--border) solid #000c;
+  clip-path: none;
+  background-size: 0 0;
 }
 
 a#daniel-button:hover,
-a#daniel-button:active{
-    background-size: 100% 100%;
-    color: #fff;
-    --t: 0.2s 0.1s;
-    }
+a#daniel-button:active {
+  background-size: 100% 100%;
+  color: #fff;
+  --t: 0.2s 0.1s;
+}
 
 a#daniel-button:active {
-    --s: #0005;
-    transition: none;
+  --s: #0005;
+  transition: none;
 }
 
 #jackyButton {
-    position: relative;
-    display: inline-block;
-    padding: 28px 10px; 
-    border: 2px solid black;
-    border-radius: 5px;
-    letter-spacing: 3px;
-    cursor: pointer;
-    zoom: 1.5;
-    text-transform: uppercase;
-    text-decoration: none;
-    text-decoration-line: none;
-    text-align: center;
+  position: relative;
+  display: inline-block;
+  padding: 28px 10px;
+  border: 2px solid black;
+  border-radius: 5px;
+  letter-spacing: 3px;
+  cursor: pointer;
+  zoom: 1.5;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-decoration-line: none;
+  text-align: center;
 }
 
 #jackyButton::before {
-    content: '';
-    position: absolute;
-    top: 25%;
-    left: -3px;
-    right: -3px;
-    height: 50%;
-    background: white;
-    transition: transform 0.75s, background-color 1s;
-    transition-timing-function: cubic-bezier(.33, .01, 0, 1);
+  content: "";
+  position: absolute;
+  top: 25%;
+  left: -3px;
+  right: -3px;
+  height: 50%;
+  background: white;
+  transition: transform 0.75s, background-color 1s;
+  transition-timing-function: cubic-bezier(0.33, 0.01, 0, 1);
 
-    transform: scaleY(1);
+  transform: scaleY(1);
 }
 
 #jackyButton:hover::before {
-    transform: scaleY(0);
+  transform: scaleY(0);
 }
 
 #jackyButton::after {
-    content: '';
-    position: absolute;
-    left: 15%;
-    top: -3px;
-    bottom: -3px;
-    width: 70%;
-    background: white;
-    transition: transform 0.75s, background-color 1s;
-    transition-timing-function: cubic-bezier(.33, .01, 0, 1);
-    transform: scaleX(1);
+  content: "";
+  position: absolute;
+  left: 15%;
+  top: -3px;
+  bottom: -3px;
+  width: 70%;
+  background: white;
+  transition: transform 0.75s, background-color 1s;
+  transition-timing-function: cubic-bezier(0.33, 0.01, 0, 1);
+  transform: scaleX(1);
 }
 
 #jackyButton:hover::after {
-    transform: scaleX(0)
+  transform: scaleX(0);
 }
 
 #jackyButton:hover {
-    color: black;
+  color: black;
 }
 
 #jackyText {
-    position: relative;
-    z-index: 5;
-    text-align: center;
-    color: lightpink;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
+  position: relative;
+  z-index: 5;
+  text-align: center;
+  color: lightpink;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
 }
 
 #phuongButton {
-    position: relative;
-    display: inline-block;
-    padding: 27.5px 0;
-    border-radius: 16px;
-    cursor: pointer;
-    zoom: 1.5;
-    text-align: center;
-    z-index: 5;
-    text-align: center;
-    background-color: #AEC5E0;
-    color: white;
-    border: none;
-    font-family: 'Pecita';
-    font-size: 32px;
-    font-weight: 200;
-    box-shadow: none;
-    -webkit-text-stroke: .75px black;
+  position: relative;
+  display: inline-block;
+  padding: 27.5px 0;
+  border-radius: 16px;
+  cursor: pointer;
+  zoom: 1.5;
+  text-align: center;
+  z-index: 5;
+  text-align: center;
+  background-color: #aec5e0;
+  color: white;
+  border: none;
+  font-family: "Pecita";
+  font-size: 32px;
+  font-weight: 200;
+  box-shadow: none;
+  -webkit-text-stroke: 0.75px black;
 }
-    
+
 a#Jonathan-button {
-    background-color: rgb(248, 248, 248);
-    border: 5px solid black;
-    cursor: pointer;
-    transition: all 0.2s linear;
-    position: center;
-    animation: 3s infinite vertical alternate;
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    align-items: center;
-    text-decoration: none;
-    font-size: 0;
+  background-color: rgb(248, 248, 248);
+  border: 5px solid black;
+  cursor: pointer;
+  transition: all 0.2s linear;
+  position: center;
+  animation: 3s infinite vertical alternate;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  font-size: 0;
 }
 
 #Jonathan-button:hover {
-    font-size: 1.5em;
+  font-size: 1.5em;
 }
 
 .zachButton {
-
-    border: 4px solid mediumslateblue;
-    background-color: cornflowerblue;
-    border-radius: 20px;
-    cursor: pointer;
-    transition: all 0.2s linear;
-    position: center;
-    animation: 3s infinite vertical alternate;
-    /* text-align: center;
+  border: 4px solid mediumslateblue;
+  background-color: cornflowerblue;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.2s linear;
+  position: center;
+  animation: 3s infinite vertical alternate;
+  /* text-align: center;
       font-family: Verdana, Geneva, Tahoma, sans-serif;
       font-size: 20px; */
-    /* position: relative; */
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .zachText {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;
-    font-weight: bold;
-    color: white;
-    /* width:full; */
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    /* height: full; */
-    margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    text-align: center;
-  
-  }
-  
-  .zachButton .zachChannel {
-    visibility: hidden;
-  }
-  
-  .zachButton:hover .zachChannel {
-    visibility: visible;
-    display: flex;
-    flex: 1;
-    margin-left: 10px;
-  }
-  
-  .zachChannel {
-    display: block;
-  
-    border: 2px solid black;
-    border-radius: 20px;
-    text-align: center;
-    align-self: center;
-    justify-content: center;
-    position: absolute;
-    padding-left: 10px;
-    padding-right: 10px;
-    font-size: 16px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 500;
-  }
-  
-  .zachButton:hover {
-    opacity: 0.5;
-    display: block;
-    border: 1px solid mediumslateblue;
-    border-radius: 20px;
-    margin: 0;
-  
-  }
-  
-  .zachchannelImage {
-    width: 300px;
-    height: auto;
-  
-    max-height: 100%;
-    max-width: 100%;
-  }
-
-.phaedra-text{
-    transform: translateY(-80px);
-    color:white;
-    text-decoration:none;
+  /* position: relative; */
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
 }
 
-  .phaedra-img{
-    align-self: center;
-    max-width: 150px;
-    transition-duration: 0.5s;
-    /* transition-delay: 0.2s; */
-  }
+.zachText {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  /* width:full; */
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /* height: full; */
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  text-align: center;
+}
 
-  .phaedra-img:hover{
-    scale: 1.5;
-  }
+.zachButton .zachChannel {
+  visibility: hidden;
+}
 
-  .bonnieButton{
-    position: relative;
-    width:100%;
-    height: 100%;
-    height: auto;
-  }
-  
-  .btn1 {
-    position: absolute;
-    opacity: 100;
-    width: 100%;
-    height: auto;
-  }
-  
-  .btn1:hover {
-  
-    opacity:0;
-  }
-  
-  .btn2 {
-    position: relative;
-    opacity: 0;
-    width: 100%;
-    height: auto;
-  }
-  
-  .btn2:hover{
-    opacity: 100;
-  }
+.zachButton:hover .zachChannel {
+  visibility: visible;
+  display: flex;
+  flex: 1;
+  margin-left: 10px;
+}
 
+.zachChannel {
+  display: block;
+
+  border: 2px solid black;
+  border-radius: 20px;
+  text-align: center;
+  align-self: center;
+  justify-content: center;
+  position: absolute;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 500;
+}
+
+.zachButton:hover {
+  opacity: 0.5;
+  display: block;
+  border: 1px solid mediumslateblue;
+  border-radius: 20px;
+  margin: 0;
+}
+
+.zachchannelImage {
+  width: 300px;
+  height: auto;
+
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.phaedra-text {
+  transform: translateY(-80px);
+  color: white;
+  text-decoration: none;
+}
+
+.phaedra-img {
+  align-self: center;
+  max-width: 150px;
+  transition-duration: 0.5s;
+  /* transition-delay: 0.2s; */
+}
+
+.phaedra-img:hover {
+  scale: 1.5;
+}
+
+.bonnieButton {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  height: auto;
+}
+
+.btn1 {
+  position: absolute;
+  opacity: 100;
+  width: 100%;
+  height: auto;
+}
+
+.btn1:hover {
+  opacity: 0;
+}
+
+.btn2 {
+  position: relative;
+  opacity: 0;
+  width: 100%;
+  height: auto;
+}
+
+.btn2:hover {
+  opacity: 100;
+}
