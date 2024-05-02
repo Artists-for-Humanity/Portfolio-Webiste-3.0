@@ -29,6 +29,11 @@ body {
   background-color: white;
 }
 
+.headline {
+  position: absolute;
+  right: 4%;
+  top: 6%;
+}
 .logo {
   width: 120px;
   height: auto;

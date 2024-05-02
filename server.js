@@ -5,7 +5,7 @@ const app = express();
 const port = 3000;
 
 // serve static files from a directory named 'public'
-app.use(express.static("/"));
+app.use(express.static("./public"));
 
 // send main entry page with links to each portfolio
 app.get("/", (req, res) => {
