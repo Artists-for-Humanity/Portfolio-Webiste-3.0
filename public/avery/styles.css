@@ -1,0 +1,131 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Mallanna&display=swap');
+
+body {
+    background-color: #FFF6FC;
+    background-image: url("./images/splat1.png") ;
+    background-repeat: no-repeat;
+    background-size :cover;
+    height:100vh; 
+    width:100vw ; 
+}
+.box {
+    position: absolute;
+    top: 5% ;
+    right: 40%;
+ }
+ .flowera1 { position: absolute;
+    top: 13%;
+    right: 85%; 
+ }
+ .flowera2{
+    position: absolute;
+    top: 80%;
+    right: 90%;
+ }
+ .flowera3{
+    position: absolute;
+    top: 5%;
+    right: 0.5%;
+ }
+ .flowera4{
+    position: absolute;
+    top: 90%;
+    right: 5%;
+ } 
+ .titlea{
+    position: absolute;
+    top:10%;
+    right: 13%;
+    font-size: 150px;
+    color: #AC6792;
+      font-family: "Abril Fatface", serif;
+   
+ }
+    
+ .bow1{
+    position: absolute;
+    top: 35%;
+    right: 35%;
+    
+ }
+ .bow11:hover{
+   scale:1.2;
+    transition: 0.3s;
+}
+ .bow11{
+   transition: 0.3s;
+ }
+ .bow2{
+    position: absolute;
+    top: 35%;
+    right: 20%;
+    
+ }
+ .bow22:hover{
+   scale:1.2;
+    transition: 0.3s;
+}
+ .bow22{
+   transition: 0.3s;
+ }
+ 
+ .bow3{
+    position: absolute;
+    text-shadow: 2px 2px;
+    width: 220px ;
+    height: 220px;
+    top: 35%;
+    right: 5%;
+   
+ }
+ .bow33:hover{
+   scale:1.2;
+    transition: 0.3s;
+}
+ .bow33{
+   transition: 0.3s;
+ }
+ .bow1text{
+    position: absolute;
+    font-size: 45px;
+    top: 47%;
+    Right:36%; 
+    color: #E87494;
+    font-family: "Mallanna", sans-serif;
+ }
+ .bow2text{
+    position: absolute;
+    font-size: 45px;
+    top:47%;
+    right: 22%;
+    color: #E87494;
+    font-family: "Mallanna", sans-serif;
+ }
+ .bow3text{
+    position: absolute;
+    font-size: 45px;
+    top:47%;
+    right:7%;
+    color: #E87494;
+    font-family: "Mallanna", sans-serif;
+ }
+ .stara1{
+    position: absolute; 
+    top:60%;
+    right:3%;
+ }
+ .stara2{
+    position: absolute; 
+    top: 10%;
+    Right:45%; 
+ }
+ .stara3{
+   position: absolute; 
+   top: 70%;
+   Right:80%; 
+ }
+ a {
+   color: hotpink;
+ }

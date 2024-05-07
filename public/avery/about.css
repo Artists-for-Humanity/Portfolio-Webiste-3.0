@@ -1,0 +1,98 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Mallanna&display=swap');
+
+body{
+    background-color: #FFF6FC;
+    background-size :cover;
+    height:100vh; 
+    width:100vw ; 
+}
+.homeicon{
+    position: absolute;
+    top: 88%;
+    right: 92%;
+
+}
+.flowerb2{
+    position: absolute;
+    top:1%;
+    right: 5%;
+
+}
+.flowerb3{
+    position: absolute;
+    top: 90%;
+    right: 1%;
+
+}
+.titleb{
+    position: absolute;
+    text-shadow: 2px 5px 4px #000000;
+    top:1%;
+    right: 70%;
+    font-size: 130px;
+    color: #AC6792;
+      font-family: "Abril Fatface", serif;
+    }
+.skiing{
+    position: absolute;
+    top:25%;
+    right:30%;
+}
+.abouttext{
+    position: absolute;
+    font-size: 25px;
+    top: 25%;
+    Right:37%; 
+    color: #E87494;
+    font-family: "Mallanna", sans-serif;
+    padding-right: 500px;
+    padding-left: 40px;
+}
+.BU{
+    position: absolute;
+    top:25%;
+    right:5%;
+}
+.drake{
+    position: absolute;
+    top:64%;
+    right:5%;
+}
+.homea{
+    position: absolute;
+    text-shadow: 2px 5px 4px #000000;
+    top:75%;
+    right: 79%;
+    font-size: 100px;
+    color: #d48cb8;
+      font-family: "Abril Fatface", serif;
+      transition: 0.3s; 
+      animation: change-rotation 3s linear infinite;
+      animation-duration: infinite;
+    }
+
+    @keyframes change-rotation {
+        0% { transform: rotate(0deg); }
+        25% { transform: rotate(5.31deg); }
+        50% { transform: rotate(-5.31deg); }
+        75% { transform: rotate(5.31deg); }
+        100% { transform: rotate(-5.31deg); }
+      }
+      
+   
+    .star1{
+        position: absolute;
+        right:54%;
+        top:19%;
+    }
+    .star2{
+        position: absolute;
+        top:80%;
+    }
+    .star3{ 
+        position: absolute;
+        right:1%;
+        top:65%;
+    }
