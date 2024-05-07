@@ -99,22 +99,23 @@
     padding-left: 20vw;
     padding-right: 20vw;
     margin-top: 50px;
+    z-index: 1;
 }
 
 .Projects-text{
-    color: hsla(0, 0%, 100%, 0);
+    color: hsla(0, 0%, 100%, 0.438);
     font-family: Inter;
     font-size: 200px;
     font-style: normal;
     font-weight: 800;
     letter-spacing: 5.5px;
     -webkit-text-stroke: 3px #000000;
+    z-index: 4;
+    position: relative;
     display: flex;
-    align-items: center;
     justify-content: center;
 
-
-
+    align-items: center;
 }
     
     
