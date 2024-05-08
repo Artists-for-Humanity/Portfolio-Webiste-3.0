@@ -129,3 +129,15 @@ body {
  a {
    color: hotpink;
  }
+ .gmail{ position: absolute; 
+   top: 95%;
+   Right:45%; 
+ }
+ .textgmail{
+   position: absolute; 
+   top: 93%;
+   Right:28%;
+   color: #E87494;
+   font-size: 25px;
+   font-family: "Mallanna", sans-serif;
+ }
