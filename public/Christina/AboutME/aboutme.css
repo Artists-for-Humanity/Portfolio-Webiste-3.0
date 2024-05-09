@@ -22,10 +22,6 @@ h1{
 
  .parent {
     display: flex;
-    /* grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px; */
     justify-content: space-evenly;
     padding-left: 10vw;
     padding-right: 10vw;
@@ -41,6 +37,25 @@ h1{
     .div2 img {
         position: relative;
         z-index: 1;
+    }
+    .frame{
+     background-image: url("../assets/frame.png");
+     background-size: contain;
+     background-repeat: no-repeat;
+     height: 70vh;
+     align-items: center;
+     padding-top: 40vh;
+     padding-left: 15vh;
+     padding-right: 15vh;
+     transform: translateY(-150px);
+
+    }
+    .text{
+        font-size: 30px;
+        text-align: center;
+        padding-left: 5vh;
+        padding-right: 5vh;
+        transform: translateY(-150px);
     }
 
     .centered-text {

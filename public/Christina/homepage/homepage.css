@@ -1,0 +1,50 @@
+@font-face {
+    font-family: Shrikhand;
+    src: url(../assets/Shrikhand-Regular.ttf);
+}
+body{
+
+    background-color: hotpink;
+    background-image:url("../assets/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.center{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:auto;
+}
+
+.barbieimg{
+    display: flex;
+    position: relative;
+    right: 415px;
+    top: 250px;
+    width: 20vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.bagimg1{
+    position: relative;
+    top: 60px;
+}
+
+.bagimg2{
+    position: relative;
+    top: 150px;
+}
+
+.bagimg3{
+    position: relative;
+    top: 150px;
+
+}
+
