@@ -1,0 +1,157 @@
+@font-face {
+  font-family: BubbleFontA;
+  src: url(../diego/fonts/BubbleFontA.ttf);
+}
+.BubbleFontA {
+  font-family: BubbleFontA;
+  color: #000000;
+  letter-spacing: normal;
+  font-weight: 120;
+  font-size: 100px;
+}
+body {
+  background-color: #f99e33;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.board {
+  background-image: url(./images/Homepage.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  max-width: 1920px;
+  width: 90%;
+  aspect-ratio: 1.777777778/1;
+  display: flex;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.stage {
+  background-image: url(./images/Projects.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  max-width: 1920px;
+  width: 90%;
+  aspect-ratio: 1.777777778/1;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+img {
+  -webkit-user-drag: none;
+  user-select: none;
+}
+.PSticky {
+  aspect-ratio: 0.9666666667/1;
+  width: 90%;
+  max-width: 493px;
+  position: relative;
+  pointer-events: all;
+}
+.sitckn {
+  display: block;
+  aspect-ratio: 0.9666666667/1;
+  width: 40%;
+  max-width: 493px;
+  position: relative;
+}
+
+a {
+  user-select: none;
+  pointer-events: none;
+  margin: 0%;
+  text-decoration: none;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+}
+.project {
+  cursor: pointer;
+  background-color: #aa8865;
+  color: white;
+  font-family: BubbleFontA;
+  transition: opacity 0.2s;
+  border-color: #543b27;
+  font-style: normal;
+  user-select: none;
+  padding: 2% 4%;
+  pointer-events: all;
+  overflow: hidden;
+  font-size: 2vw;
+  transition: width 3s;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.project:active {
+  opacity: 0.6;
+}
+.project:hover {
+  opacity: 0.8;
+}
+.back {
+  pointer-events: all;
+  height: auto;
+  width: 7%;
+  top: 0%;
+  left: 0%;
+}
+
+.buttonSpace {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 20%;
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  height: 70%;
+  width: 100%;
+}
+
+.div1 {
+  grid-area: 1 / 1 / 2 / 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.div2 {
+  grid-area: 1 / 2 / 2 / 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.div3 {
+  grid-area: 2 / 1 / 3 / 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.div4 {
+  grid-area: 2 / 2 / 3 / 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  height: 76%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,47 @@
+body {
+  background-color: #f99e33;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.plains {
+  background-image: url(./images/Resume.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  max-width: 1920px;
+  width: 90%;
+  aspect-ratio: 1.777777778/1;
+  display: flex;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.back {
+  pointer-events: all;
+  height: auto;
+  width: 100%;
+  top: 0%;
+  left: 0%;
+}
+.img {
+  -webkit-user-drag: none;
+  user-select: none;
+}
+
+.back2 {
+  width: fit-content;
+  height: fit-content;
+  user-select: none;
+  pointer-events: none;
+  margin: 0%;
+  text-decoration: none;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+}
