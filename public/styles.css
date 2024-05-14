@@ -288,7 +288,22 @@ a#Jonathan-button {
 #Jonathan-button:hover {
   font-size: 1.5em;
 }
-
+#DiegoButton {
+  background-color: #fbe2c5;
+  color: #8c8585;
+  font-weight: bold;
+  padding: 3% 6%;
+  text-decoration: none;
+  font-size: 1vw;
+  transition: padding 0.5s;
+}
+#DiegoButton:hover {
+  padding: 5% 10%;
+  opacity: 0.9;
+}
+#DiegoButton:active {
+  opacity: 0.7;
+}
 .bonnieButton {
   position: relative;
   width: 100%;
