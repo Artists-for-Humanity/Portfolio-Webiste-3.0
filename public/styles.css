@@ -339,29 +339,10 @@ a#Jonathan-button {
   box-shadow: none;
   -webkit-text-stroke: 0.75px black;
 }
-.buttonborder-avery{
-  position: relative;
-  text-align: center;
-  display: inline-block;
-  /* right:72%;
-  top:80%; */
+.averybutton:hover{
+  scale:1.3.5;
+  transition: 0.4s;
 }
-
-.button-avery{
-  position: relative;
-  /* display: inline-block; */
-  /* right:35.5%; */
-  /* top:87%; */
-  color: #E87494;
-  font-size: 45px;
-}
-.averybutton2:hover{
-  scale:1.2;
-  transition: 0.3s;
-}
-.averybutton2{
-  position: relative;
-  /* right:35.5%; */
-  /* top:87%; */
-   transition: 0.3s;
+.averybutton{
+  transition:0.2s;
 }
