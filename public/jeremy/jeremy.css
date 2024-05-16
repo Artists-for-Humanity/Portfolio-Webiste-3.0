@@ -17,7 +17,6 @@ body {
 .container {
   display: flex;
   flex-direction: column;
-  background-color: #53483f;
   border: 5px solid black;
   height: 95vh;
   width: 97vw;
@@ -25,7 +24,7 @@ body {
   box-shadow: inset 0 0 10px rgb(0 0 0 / 25%);
   font-family: "Kings";
   text-align: center;
-  text-color: #212121;
+  color: #212121;
   font-size: 100%;
 }
 
@@ -88,43 +87,15 @@ body {
   flex-direction: row;
   justify-content: center;
   align-self: center;
-  position: absolute;
-  padding-top: 8.5%;
-  width: 10%;
-  height: auto;
-  width: auto;
   opacity: 0;
-  /* background-color: #212121; */
+  transition: 0.3s;
 }
-
-/* .pageOptions:hover {
-  opacity: 0;
-} */
 
 .crumbledPaper {
   width: 25vw;
   height: auto;
   padding-left: 12%;
 }
-
-/* .crumbledPaper:hover {
-  transform: scale(1.2);
-} */
-
-.crumbledPaper:hover ~ .pageOptions {
-  opacity: 1;
-}
-
-/* .pageOptions {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-self: center;
-  position: absolute;
-  padding-top: 8.5%;
-  width: 10%;
-  height: auto;
-} */
 
 .ProjectsButton {
   width: 8vw;
@@ -134,7 +105,6 @@ body {
 .GroupsButton {
   width: 8vw;
   height: auto;
-  /* padding-left: 20%; */
 }
 
 .MusicButton {
