@@ -3,10 +3,10 @@ document.addEventListener("DOMContentLoaded", function () {
   const pageOptions = document.querySelector(".pageOptions");
 
   crumbledPaper.addEventListener("mouseenter", function () {
-    pageOptions.style.opacity = "1";
+    pageOptions.style.display = "flex";
   });
 
   crumbledPaper.addEventListener("mouseleave", function () {
-    pageOptions.style.opacity = "0";
+    pageOptions.style.display = "none";
   });
 });
