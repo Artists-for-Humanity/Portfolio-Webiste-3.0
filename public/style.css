@@ -96,6 +96,22 @@ body {
 
 /* ADD BUTTONS BELOW */
 
+#IzayahButton{
+  /* background-image: url("./Izayah/Images/backgrtound-button.gif"); */
+  background-image: url(./Izayah/Images/backgrtound-button.gif);
+  scale: .20;
+  /* position: fixed; */
+  /* top: 0; */
+  /* left:0; */
+  /* width: 100%; */
+  /* height: 100%; */
+  /* background-image: url(./assets/Lofi-Boy2.gif); */
+  /* background-size: cover; */
+  /* background-position:30%; */
+  /* z-index: -1; */
+}
+
+
 /*Serenity's Button*/
 
 #SerenityButton{
