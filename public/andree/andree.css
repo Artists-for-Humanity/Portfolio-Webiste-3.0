@@ -1,0 +1,43 @@
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0%;
+}
+
+header{
+    justify-content: center;
+    align-items: flex-start;
+    height: 30vh;
+}
+
+.head{
+    width: 100%;
+}
+
+section{
+    height: 60vh;
+}
+
+footer{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 10vh;
+    color: rgba(250,221,221,1);
+    padding-right: 20px;
+}
+
+.heading{
+    font-family: Suravaram;
+    font-size: 40px;
+    color: black;
+    align-items: flex-start;
+}
+
+.about{
+    font-family: Suravaram;
+    font-size: 20px;
+    text-decoration: none;
+    justify-content: flex-end;
+}
