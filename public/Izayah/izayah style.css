@@ -9,11 +9,14 @@ a{
 body{
 background-image: url("./Backgrounds/HomePageBG.png");
 background-size: cover;
+margin: 0;
+background-repeat: no-repeat;
 }
 
 .OutdoorFun{
     background-image: url("./Backgrounds/BackgroundForOutside.jpg");
     background-size: cover;
+    height: 100vh;
 }
 
 .favoritegames{
@@ -35,7 +38,7 @@ backdrop-filter:brightness(50%);
 background: url("./Images/school.jpg");
 background-size: cover;
 background-repeat: no-repeat;
-height: 100vh;
+height: 100%;
 }
 
 .AFHE
@@ -43,7 +46,7 @@ height: 100vh;
 background: url("./Backgrounds/newNewAFHBackground.jpg");
 background-size: cover;
 background-repeat: no-repeat;
-height: 100vh;
+height: 100%;
 backdrop-filter:brightness(70%);
 }
 
