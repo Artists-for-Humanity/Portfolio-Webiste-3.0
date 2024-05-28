@@ -11,6 +11,7 @@ background-image: url("./Backgrounds/HomePageBG.png");
 background-size: cover;
 margin: 0;
 background-repeat: no-repeat;
+height: 100vh;
 }
 
 .OutdoorFun{
@@ -24,6 +25,8 @@ background-repeat: no-repeat;
 background-size: cover;
 height: 100vh;
 backdrop-filter:brightness(50%);
+background-repeat: no-repeat;
+margin: 0;
 }
 
 .Pets{
