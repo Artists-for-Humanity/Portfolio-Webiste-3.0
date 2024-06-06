@@ -14,6 +14,12 @@ background-repeat: no-repeat;
 height: 100vh;
 }
 
+@media (max-width: 600px) {
+    .gridContainer {
+        padding-top: 5vh;
+    }
+    }
+
 .OutdoorFun{
     background-image: url("./Backgrounds/BackgroundForOutside.jpg");
     background-size: cover;
