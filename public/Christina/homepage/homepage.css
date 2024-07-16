@@ -1,0 +1,123 @@
+@font-face {
+    font-family: Shrikhand;
+    src: url(../assets/Shrikhand-Regular.ttf);
+}
+body{
+
+    background-color: hotpink;
+    background-image:url("../assets/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.center{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:auto;
+    margin-top:20vh;
+}
+
+.barbieimg{
+    /* display: flex; */
+    /* position: relative; */
+    right: 415px;
+    top: 250px;
+    width: 20vw;
+    /* margin-top:20vh; */
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+/* .bagimg1{
+    position: relative;
+    top: 60px;
+    right:200px;
+}
+
+.bagimg2{
+    position: relative;
+    top: 250px;
+    right: 250px;
+}
+
+
+
+.bagimg3{
+    position: relative;
+    top: 400px;
+    right: 750px;
+
+} */
+
+/* .col{
+    display: flex;
+    flex-direction: column;
+} */
+
+/* .email{
+    position: relative;
+    bottom: 300px;
+    left: 2000px;
+}
+
+.snapchat{
+    position: relative;
+    top: 210px;
+}
+.instagram{
+    position: relative;
+    top: 100px;
+    left: 1800px;
+} */
+
+.sectionOne{
+    width: 30vw;
+    height:50vh;
+    background-color:azure;
+    position:relative;
+}
+
+.sectionTwo{
+width:30vw;
+height:50vh;
+background-color: yellow;
+position:relative;
+}
+
+.sectionThree{
+    width:30vw;
+    height:50vh;
+    background-color: aqua;
+    position:relative;
+
+}
+
+.bagimg1{
+    position: absolute;
+    top:30px;
+    left:200px;
+}
+
+.bagimg2{
+    position:absolute;
+    top:200px;
+    left:400px;
+}
+
+.bagimg3{
+    position: absolute;
+    top:400px;
+    left:200px;
+}
+
+.title{
+   font-size: 70px;
+   font-weight: 800;
+   text-align: center;
+}
