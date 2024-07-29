@@ -1,3 +1,17 @@
-.Caca {
+.McText {
     text-align: center;
+    font-size: 70px;
+    Margin: 0;
+}
+P {
+    font-size: 30px;
+    text-align: center;
+    Margin: 0;
+}
+.B2 {
+   vertical-align: center;
+}
+body {
+    height: 100vh;
+    desplay: flex;
 }
