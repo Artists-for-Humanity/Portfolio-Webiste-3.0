@@ -8,30 +8,36 @@ body{
     align-items: center;
     justify-content: space-between;
     font-size: 35px;
-    height:
-}
+    height: 100%;
 p{
     font-size: 20px;
     font-family: 'Josefin Sans';
     letter-spacing: 20px;
     text-align:center;
-    margin:0px;
+    margin:auto;
 }
 .B1{
-    margin-bottom: 50px;
+    margin-bottom: 40px;
+    margin-top: 0px;
 }
 .B2{
     margin: 0px;
+    padding: 11.2%;
 }
 .B3{
     margin: 0px;
 }
-
+img{ 
+    position: relative;
+    right:42%;
+}
 .alien{
-    position: absolute;
-    margin-right: 1000px;
-    margin-top: 250px;
+    transform: translateY(-100%);
 }
 h1{
-    margin: 0px;
+    margin:0px;
+}
+a{
+    text-decoration: none;
+    color: black;
 }
