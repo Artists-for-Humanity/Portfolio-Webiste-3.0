@@ -346,3 +346,10 @@ a#Jonathan-button {
 .averybutton{
   transition:0.2s;
 }
+.jesus_name{
+  text-align:center;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: rgba(201, 226, 111, 0.25); 
+  padding: 10px;
+  border-radius: 8px;
+}
