@@ -1,15 +1,31 @@
+html {
+    height: 100%;
+  }
 body{
     margin: 0px;
-    height: 100vh;
-}
-.Container {
-    display: flex;
-    flex-direction: column; 
-    align-items: center;
-    justify-content: space-between;
-    font-size: 35px;
     height: 100%;
+    min-height: 100%;
 }
+.Container > div {
+    border: 2px solid rgb(185, 185, 184);
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    padding: 1em;
+    color: #d9480f;
+  }
+  .Container > div:hover{
+    background-color:rgb(211, 210, 210);
+  }
+  .Container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height:100%;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 0 auto;
+    min-height: 100%;
+  }
 p{
     font-size: 20px;
     font-family: 'Josefin Sans';
@@ -17,26 +33,17 @@ p{
     text-align:center;
     margin:auto;
 }
-.B1{
-    margin-bottom: 40px;
-    margin-top: 0px;
-}
-.B2{
-    margin: 0px;
-    padding: 11.2%;
-}
-.B3{
-    margin: 0px;
-}
-img{ 
-    position: relative;
-    right:42%;
-}
-.alien{
-    transform: translateY(-100%);
+div{
+    text-align: center;
 }
 h1{
-    margin:0px;
+    font-size: 64px;
+}
+.alien{
+    position:absolute;
+    left:0;
+    bottom: 0;
+    height: 30vh;
 }
 a{
     text-decoration: none;
