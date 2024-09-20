@@ -26,7 +26,7 @@ body{
     margin: 0 auto;
     min-height: 100%;
   }
-p{
+.UnderT{
     font-size: 20px;
     font-family: 'Josefin Sans';
     letter-spacing: 20px;
@@ -49,8 +49,37 @@ a{
     text-decoration: none;
     color: black;
 }
-.top{
-    display: flex;
-    flex-direction: column; 
-    align-items: center;
-}
+ h1#tt{
+  margin: 0px;
+ }
+ .ContainApps{
+  flex-direction:row-reverse;
+  align-items: center;
+  justify-content: left;
+  display: flex;
+  position: absolute;
+  bottom:0;
+  right: 0;
+ }
+ .ContainApps > a{
+  transform: scale(.4);
+ }
+ #yap{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 30px;
+  text-align: left;
+  margin: 5px;
+ }
+ .Borderyap{
+  height: 40%;
+  min-width: 30%;
+  max-width: 30%;
+  /* transform:translateY(400px);
+  transform: translateX(-15vh); */
+  transform: translate(-5vh, 20vh);
+  float: right;
+  margin: 5px;
+  /* background-color: rgb(102, 179, 241); */
+  border: rgb(118, 200, 248) 10px;
+  border-style: solid;
+ }
