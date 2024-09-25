@@ -53,16 +53,25 @@ a{
   margin: 0px;
  }
  .ContainApps{
-  flex-direction:row-reverse;
-  align-items: center;
-  justify-content: left;
+  flex-direction:row;
+  align-items:center;
   display: flex;
   position: absolute;
-  bottom:0;
-  right: 0;
+  bottom: 10px;
+  height: 100px;
+  width: 100px;
+  align-self: baseline;
  }
+
  .ContainApps > a{
-  transform: scale(.4);
+  max-height:100px;
+  max-width:100px;
+  padding-left: 50%;
+  padding-right: 50%;
+ }
+ .AIs{
+  width: 100px;
+  height: 100px;
  }
  #yap{
   font-family: 'Times New Roman', Times, serif;
@@ -72,14 +81,19 @@ a{
  }
  .Borderyap{
   height: 40%;
-  min-width: 30%;
-  max-width: 30%;
-  /* transform:translateY(400px);
-  transform: translateX(-15vh); */
-  transform: translate(-5vh, 20vh);
-  float: right;
+  Width: 100%;
   margin: 5px;
   /* background-color: rgb(102, 179, 241); */
   border: rgb(118, 200, 248) 10px;
   border-style: solid;
  }
+ .C4AM {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height:100%;
+  max-width: 800px;
+  margin: 0 auto;
+  min-height: 100%;
+  align-items: center;
+}
