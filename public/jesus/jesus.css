@@ -80,12 +80,14 @@ a{
   margin: 5px;
  }
  .Borderyap{
-  height: 40%;
+  height: 30%;
   Width: 100%;
   margin: 5px;
   /* background-color: rgb(102, 179, 241); */
-  border: rgb(118, 200, 248) 10px;
+  border: rgb(0, 0, 0) 10px;
   border-style: solid;
+  border-width: 7px;
+  border-radius: 5%;
  }
  .C4AM {
   display: flex;
