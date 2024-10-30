@@ -86,7 +86,7 @@ a{
   /* background-color: rgb(102, 179, 241); */
   border: rgb(0, 0, 0) 10px;
   border-style: solid;
-  border-width: 7px;
+  border-width: 3px;
   border-radius: 5%;
  }
  .C4AM {
@@ -98,4 +98,20 @@ a{
   margin: 0 auto;
   min-height: 100%;
   align-items: center;
+}
+.Back{
+  position:absolute;
+  left:0;
+  bottom:20px;
+  margin:0;
+  align-items: center;
+}
+.UnderB{
+  position:absolute;
+  left:35px;
+  bottom:0;
+  font-size: 20px;
+  font-family: 'Josefin Sans';
+  letter-spacing: 10px;
+  margin:0;
 }
