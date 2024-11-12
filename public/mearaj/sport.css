@@ -14,7 +14,7 @@ svg {
   z-index: 6;
 
 }
-#soccer1 {
+/* #soccer1 {
   opacity: 1;
   display: block;
 }
@@ -27,4 +27,15 @@ svg {
 #basket {
   opacity: 1;
   display: block;
+} */
+
+/* #soccer1 {
+  opacity: 0;
+  display: block;
 }
+
+#soccer2,
+#basket {
+  opacity: 0;
+  display: none;
+} */
