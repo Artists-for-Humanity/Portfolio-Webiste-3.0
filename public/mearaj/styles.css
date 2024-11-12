@@ -5,25 +5,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&family=Amita:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Arapey:ital@0;1&display=swap");
-.arapey-regular-italic {
-  font-family: "Arapey", serif;
-  font-weight: 400;
-  font-style: italic;
+.row {
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
 }
-
-.arapey-regular-italic {
-  font-family: "Arapey", serif;
-  font-weight: 400;
-  font-style: italic;
+.font1 {
+  font-family: "Amita", serif;
+  font-weight: 700;
+  font-style: normal;
+  color: white;
+  margin-left: 12vw;
+  margin-top: -2vw;
+  font-size: 100px;
+  align-items: center;
 }
-
-.arapey-regular-italic {
-  font-family: "Arapey", serif;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.amaranth-regular {
+.font2 {
   font-family: "Amaranth", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -35,82 +32,12 @@
   align-items: center;
   justify-content: center;
 }
-.amita-bold {
-  font-family: "Amita", serif;
-  font-weight: 700;
-  font-style: normal;
-  color: white;
-  margin-left: 12vw;
-  margin-top: -2vw;
-  font-size: 100px;
-  align-items: center;
-}
-
-.italianno-regular {
-  font-family: "Italianno", cursive;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 150px;
-}
-.jacques-francois-shadow-regular {
-  font-family: "Jacques Francois Shadow", serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 250px;
-  background: #00ffd1;
-  background: linear-gradient(to right, #00ffd1 51%, #cc00ff 100%);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.rubik-moonrocks-regular {
-  font-family: "Rubik Moonrocks", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 200px;
-  color: black;
-}
-.rubik-moonrocks-regular:hover {
-  font-family: "Rubik Moonrocks", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 200px;
-  color: white;
-}
-
-header {
-  vertical-align: baseline;
-  margin: 0;
-  padding: 0;
-  border: 0;
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  text-align: center;
-  margin-right: 40vh;
-}
-
-.navbar {
-  display: block;
-  position: fixed;
-  margin: 0;
-  padding-top: 100px;
-  padding: 1.5vh 2vw;
-  height: 6vh;
-  width: 100vw;
-  align-items: center;
-}
-
-.background {
-  background: url("https://i.pinimg.com/474x/65/8f/cd/658fcdab42adb831c9211b1e558587d1.jpg")
-    no-repeat;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
+.nav-background {
   height: 100vh;
-  
+background-position: 0px 0px;
+background-image: conic-gradient(
+  from 264deg at 50% 50%,
+ #A100FFFF 0%, #71C4FFFF 52%, #921 100%)
 }
 .dot {
   height: 700px;
@@ -124,16 +51,23 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
+.arapey-regular-italic {
+  font-family: "Arapey", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+.button-text {
+  margin-top: 72px;
+}
+.text-sport {
+  margin-top: 72px;
+}
+.text-me {
+  margin-top: 72px;
+}
 body {
   display: flex;
   margin: 0;
-  
-}
-.row {
-  display: flex;
-  justify-content: space-evenly;
-  color: white;
 }
 .circle {
   color: white;
@@ -152,119 +86,54 @@ body {
   margin-right: -18vh;
   margin-left: 8vh;
 }
-
-.button-text {
-  margin-top: 72px;
+header{
+  border:solid #FFFFFF 16px;
+  height: 80vh;
+  margin-top: 10vh;
+  width: 90vw;
+  margin-left: 5vw;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ -webkit-box-shadow:0px 0px 57px 30px rgba(255,255,255,0.3);
+-moz-box-shadow: 0px 0px 57px 30px rgba(255,255,255,0.3);
+box-shadow: 0px 0px 57px 30px rgba(255,255,255,0.3);
 }
-.text-sport {
-  margin-top: 72px;
-}
-.text-me {
-  margin-top: 72px;
-}
-
-
-/* .nav-background{
+.background{
+  background: rgb(5,175,170);
+background: linear-gradient(180deg, rgba(5,175,170,1) 0%, rgba(157,30,198,1) 100%);
 height: 100vh;
-background-position: 0px 0px;
-background-image: linear-gradient(90deg, #A100FFFF 0%, #71C4FFFF 100%);
-
-} */
-
-
-.nav-background {
-  height: 100vh;
-background-position: 0px 0px;
-background-image: conic-gradient(
-  from 264deg at 50% 50%,
- #A100FFFF 0%, #71C4FFFF 52%, #921 100%
-  )
+width: 100vw;
 }
-
-
-.kings-regular {
-  font-family: "Kings", cursive;
-  font-weight: 400;
+.amita-bold {
+  font-family: "Amita", serif;
+  font-weight: 700;
   font-style: normal;
-  text-align: center;
-  font-size: 250px;
+  /* margin-top: 20vh; */
+  /* margin-left: 33vw; */
+  font-size: 180px;
   color: white;
-  margin-left: 30vw;
-  margin-top: 2vw;
 }
-
-.sevillana-regular {
-  font-family: "Sevillana", cursive;
-  font-weight: 100;
+.amaranth-bold {
+  font-family: "Amaranth", sans-serif;
+  font-weight: 700;
   font-style: normal;
-  color: white;
-  font-size: 30px;
-  text-align: center;
- 
-  margin-top: -5vw;
+  /* margin-top: 10vh; */
+  font-size: 100px;
+  /* margin-left: 45vw; */
 }
-
-
-.background-color {
-  background: #32B5AD;
-background: linear-gradient(to right, #32B5AD 34%, #7000A4 100%);
-background-clip: text;
--webkit-text-fill-color: transparent;
-
+.background2{
+  background: rgb(50,181,173);
+background: linear-gradient(94deg, rgba(50,181,173,1) 0%, rgba(112,0,164,1) 100%);
 }
-
-@property --gradient-angle {
-  syntax: "<angle>";
-  initial-value: 0deg;
-  inherits: false;
-}
-
-:root {
-  --clr-1: #34ebff;
-  --clr-2: #3300ff;
-  --clr-3: #0e4b50;
-  --clr-4: #2d8f85;
-  --clr-5: #637c54;
-}
-                
-
-.card {
+.container {
   height: 70vh;
-  background-size: cover;
-  aspect-ratio: 1 / 1.5;
-  background: var(--clr-1);
-  border-radius: 0.5rem;
-  position: relative;
-  width: 80vw;
+  background-color: black;
 }
-
-.card::before,
-.card::after {
-  content: "";
-  position: absolute;
-  inset: -.8rem;
-  z-index: -1;
-  background: conic-gradient(
-    from var(--gradient-angle),
-    var(--clr-3),
-    var(--clr-4),
-    var(--clr-5),
-    var(--clr-4),
-    var(--clr-3)
-  );
-  border-radius: inherit;
-  animation: rotation 20s linear infinite;
-}
-
-.card::after {
-  filter: blur(3.5rem);
-}
-
-@keyframes rotation {
-  0% {
-    --gradient-angle: 0deg;
-  }
-  100% {
-    --gradient-angle: 360deg;
-  }
+svg {
+height: 100%;
+width: 100%;
+position: relative;
 }
