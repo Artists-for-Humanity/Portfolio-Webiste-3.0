@@ -1,0 +1,47 @@
+body {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    width: 100vw;
+    height: 100vw;
+    color: antiquewhite;
+}
+
+.banner {
+    width: 20vw;
+    height: 100vw;
+    background-color: #1C0907;
+}
+
+.content {
+    width: 65vw;
+    height: 100vw;
+}
+
+.roof {
+    height: 7vw;
+    background-color: #1C0907;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+}
+
+.text {
+    width: 32.5vw;
+}
+
+.image {
+    width: 32.5vw;
+    height: 93vw;
+    background-image: url('assets/PHI.webp');
+    background-repeat: no-repeat;
+}
+
+.nav {
+    width: 15vw;
+    height: 100vw;
+    background-color: #1C0907;
+}
+
