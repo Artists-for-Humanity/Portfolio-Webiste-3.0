@@ -13,13 +13,17 @@ body {
     background-color: #1C0907;
 }
 
+.logo {
+    height: 5vw;
+}
+
 .content {
-    width: 65vw;
+    width: 70vw;
     height: 100vw;
 }
 
 .roof {
-    height: 7vw;
+    height: 5vw;
     background-color: #1C0907;
 }
 
@@ -29,18 +33,18 @@ body {
 }
 
 .text {
-    width: 32.5vw;
+    width: 35vw;
 }
 
 .image {
-    width: 32.5vw;
+    width: 35vw;
     height: 93vw;
     background-image: url('assets/PHI.webp');
     background-repeat: no-repeat;
 }
 
 .nav {
-    width: 15vw;
+    width: 10vw;
     height: 100vw;
     background-color: #1C0907;
 }
