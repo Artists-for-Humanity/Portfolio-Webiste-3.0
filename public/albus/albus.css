@@ -4,13 +4,60 @@ body {
     margin: 0;
     width: 100vw;
     height: 68.7vw;
-    background-image: linear-gradient(rgba(126, 22, 17, 0),
-    rgba(126, 22, 17, 1)
-    );
+    background-image: linear-gradient(rgba(126, 22, 17, 0) 35%,
+    rgba(126, 22, 17, 1));
     background-color: #1C0907;
     color: #EFE3DB;
+    font-family: "Crimson Text", serif;
 }
 
+/* Color palette:
+#1C0907
+#EFE3DB
+#C8907E
+#BB7057
+#7E1611
+*/
+
+/* Crimson text font classes */
+.crimson-text-regular {
+    font-family: "Crimson Text", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .crimson-text-semibold {
+    font-family: "Crimson Text", serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .crimson-text-bold {
+    font-family: "Crimson Text", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .crimson-text-regular-italic {
+    font-family: "Crimson Text", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .crimson-text-semibold-italic {
+    font-family: "Crimson Text", serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  .crimson-text-bold-italic {
+    font-family: "Crimson Text", serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+
+/* Base of web */
 .banner {
     width: 15.4vw;
     background-color: #1C0907;
