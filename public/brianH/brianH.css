@@ -182,8 +182,8 @@ footer {
     padding: 5px;
     background-color: #000000;
     color: #000000;
-    position: relative;
-    height: 200px;
+    height: 150px;
+    margin-top: 450px;
 }
 
 .footer-info{
