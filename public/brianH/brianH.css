@@ -191,9 +191,11 @@ footer {
     text-align: center;
     padding: 5px;
     background-color: #000000;
-    color: #000000;
+    /* color: #000000; */
     height: 150px;
     /* margin-top: 490px; */
+    border-top: 10px solid rgb(62, 62, 62);
+    
 }
 
 .footer-info{
@@ -204,7 +206,6 @@ footer {
     padding-left: 30px;
     width: auto;
     height: 100px;
-    
 }
 
 .num-email{
