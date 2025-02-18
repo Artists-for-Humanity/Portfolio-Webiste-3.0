@@ -1,23 +1,23 @@
-body{
+body {
     margin: 0;
     scroll-behavior: auto;
     height: 100vh;
 }
 
-.home-bg{
+.home-bg {
     position: relative;
     top: -25px;
-    left:0;
+    left: 0;
     width: 100%;
     height: 100%;
     background-image: url(assets/background.png);
     background-size: cover;
-    background-position:30%;
+    background-position: 30%;
 
 
 }
 
-.name{
+.name {
     color: hsla(0, 0%, 100%, 0);
     font-family: Inter;
     font-size: 200px;
@@ -28,22 +28,23 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
- 
+
 
 
 
 }
-.nav-items{
+
+.nav-items {
     display: flex;
- justify-content: space-between; 
- padding-left: 30vw;
- padding-right: 30vw;
+    justify-content: space-between;
+    padding-left: 30vw;
+    padding-right: 30vw;
 
 
 
 }
 
-.intro{
+.intro {
     color: hsla(0, 0%, 100%, 0);
     font-family: Inter;
     font-size: 200px;
@@ -63,17 +64,17 @@ body{
 
 
 } */
-.Projects-bg{
+.Projects-bg {
     top: 0;
-    left:0;
+    left: 0;
     width: 100%;
     height: 100vh;
     background-image: url(assets/Project-backgroud.png);
     background-size: cover;
-    background-position:30%;
+    background-position: 30%;
 }
 
-.Projects-Rectangles{
+.Projects-Rectangles {
     position: absolute;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -85,17 +86,17 @@ body{
     place-items: center;
 }
 
-.back-buton{
+.back-buton {
     position: absolute;
     z-index: 3;
- top: 5px;
- left: 5px;
+    top: 5px;
+    left: 5px;
 
 
 
 }
 
-.Rectangl-imges{
+.Rectangl-imges {
     position: absolute;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -109,7 +110,7 @@ body{
     z-index: 1;
 }
 
-.Projects-text{
+.Projects-text {
     color: hsla(0, 0%, 100%, 0.438);
     font-family: Inter;
     font-size: 150px;
@@ -128,44 +129,44 @@ body{
     justify-content: center;
     align-items: center;
 }
-    
-.About-me-bg{
+
+.About-me-bg {
     top: 0;
-    left:0;
+    left: 0;
     width: 100vw;
     height: 100vh;
     background-image: url('../brianH/assets/bg.png');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position:30%;
+    background-position: 30%;
 
 }
 
 
 
 
-.About-box{
-    display:flex;
+.About-box {
+    display: flex;
     flex-direction: row;
     align-items: center;
     /* background-color: #000000; */
-    height:100vh;
-    width:100vw;
+    height: 100vh;
+    width: 100vw;
     justify-content: center;
 
 }
 
-.black-box{
+.black-box {
     background-color: #000000;
-    width:60%;
-    height:60%;
+    width: 60%;
+    height: 60%;
 }
 
-h1.text{
-    padding-top:15px;
+h1.text {
+    padding-top: 15px;
     padding-left: 450px;
     font-size: 40px;
-    color:white;
+    color: white;
     font-weight: bold;
     background-color: #000000;
     z-index: 3;
@@ -174,7 +175,7 @@ h1.text{
 }
 
 
-.About-text{
+.About-text {
     color: hsl(0, 0%, 100%);
     font-family: jomolhari;
     font-size: 35px;
@@ -195,20 +196,20 @@ footer {
     height: 150px;
     /* margin-top: 490px; */
     border-top: 10px solid rgb(62, 62, 62);
-    
+
 }
 
-.footer-info{
+.footer-info {
     display: flex;
     justify-content: end;
-    justify-content:space-between;
+    justify-content: space-between;
     padding-top: 15px;
     padding-left: 30px;
     width: auto;
     height: 100px;
 }
 
-.num-email{
+.num-email {
     color: hsl(0, 0%, 100%);
     font-family: Inter;
     font-size: 44px;
@@ -217,7 +218,15 @@ footer {
     letter-spacing: 5 px;
 }
 
-#one, #two, #three, #four, #five, #six, #seven, #eight, #nine {
+#one,
+#two,
+#three,
+#four,
+#five,
+#six,
+#seven,
+#eight,
+#nine {
     width: 150px;
     height: 150px;
     border-radius: 20px;
@@ -229,31 +238,33 @@ footer {
 }
 
 #one {
-    background-image: url(assets/Big\ White\ king.png);    
+    background-image: url(assets/Big\ White\ king.png);
 }
 
 #two {
-    background-image: url(assets/Big\ White\ Queen.png);    
+    background-image: url(assets/Big\ White\ Queen.png);
 }
 
 #three {
-    background-image: url(assets/Big\ White\ Rook.png);    
+    background-image: url(assets/Big\ White\ Rook.png);
 }
 
 #five {
-    background-image: url(assets/Big\ Black\ King.png);    
+    background-image: url(assets/Big\ Black\ King.png);
 }
 
 #seven {
-    background-image: url(assets/Big\ Black\ Queen.png);    
+    background-image: url(assets/Big\ Black\ Queen.png);
 }
 
 #eight {
-    background-image: url(assets/Big\ Black\ Rook.png);  
-}
-#nine{
     background-image: url(assets/Big\ Black\ Rook.png);
 }
+
+#nine {
+    background-image: url(assets/Big\ Black\ Rook.png);
+}
+
 .projects_container {
     width: 100vw;
     height: 100vh;
@@ -262,20 +273,56 @@ footer {
     align-items: center;
 }
 
-.box{
+.box {
     display: flex;
     justify-content: end;
-    justify-content:space-between;
+    justify-content: space-between;
     background-color: black;
     height: 100px;
     width: 100px;
 
 }
 
-.socials{
+.socials {
     background-color: #ffffff;
-    
+
 }
-nav{
-padding-top: 35px;
+
+nav {
+    padding-top: 35px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(8, 0fr);
+    /* gap: 2%; */
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    /* gap: 2%; */
+}
+
+
+.square-1 {
+    aspect-ratio: 1/ 1;
+    display: flex;
+    align-items: center;
+    /* padding: 5%; */
+    background-color: #000000;
+    color: #fff;
+    height: 100px;
+    width: 100px;
+}
+
+.square-2 {
+    aspect-ratio: 1/ 1;
+    display: flex;
+    align-items: center;
+    /* padding: 5%; */
+    background-color: #ffffff;
+    color: #000000;
+    height: 100px;
+    width: 100px;
 }
