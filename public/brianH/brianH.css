@@ -294,14 +294,19 @@ nav {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(8, 0fr);
+    grid-template-columns: repeat(8, 1fr);
     /* gap: 2%; */
+    border: 15px solid #000000;
+    box-shadow: 0 0 100px #ffffff            /* Inner white glow */
+
 }
+
 
 .grid-2 {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     /* gap: 2%; */
+    
 }
 
 
@@ -326,3 +331,19 @@ nav {
     height: 100px;
     width: 100px;
 }
+
+.Grid_container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+}
+
+/* .testbg{
+    background-image:url();
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+} */
