@@ -295,9 +295,14 @@ nav {
 
 
 
+
+
+
+
 .grid {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
+    /* gap: 2%; */
     border: 15px solid #131212;
     box-shadow: 0 0 100px #ffffff;
 
@@ -364,7 +369,6 @@ nav {
     height: 300px;
     width: 300px;
 }
-
 .square-3 {
     /* aspect-ratio: 1/ 8; */
     /* display: flex;
@@ -372,9 +376,9 @@ nav {
     background-color: #000000;
     color: #fff;
     /* height: 50px;
-    width: 50px;*/
+    width: 50px;
+ */
 }
-
 .square-4 {
     /* aspect-ratio: 1/ 8; */
     /* display: flex;
@@ -390,10 +394,9 @@ nav {
     flex-direction: column;
     gap: 10px;
 }
-
 .right_grids{
     display: flex;
     flex-direction: column;
     gap: 10px;
+    
 }
-
