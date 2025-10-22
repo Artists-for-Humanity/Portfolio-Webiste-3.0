@@ -272,3 +272,80 @@ body.downtown::before {
     text-decoration: none;
 }
 
+/* Uniform responsive grid for portfolio tiles */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  align-items: stretch;
+  width: 100%;
+  padding: 20px 0;
+  box-sizing: border-box;
+}
+
+/* Each grid item becomes a card container */
+.grid-item {
+  height: 240px; /* adjust card height */
+  box-sizing: border-box;
+  display: block;
+}
+
+/* Make the link fill the card so clicks cover entire tile */
+.grid-item > a {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: inherit;
+  padding: 8px;
+  box-sizing: border-box;
+  background: #fff;
+  border: 2px solid #000; /* polaroid black border */
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+/* Image area: takes most of the card, consistent aspect and crop */
+.grid-item > a img {
+  width: 100%;
+  height: 70%; /* image occupies 70% of card height */
+  object-fit: cover; /* crop to fill without distortion */
+  display: block;
+  border: 4px solid #000; /* photo black border */
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+/* Label / text area below the image */
+.grid-item > a .label,
+.grid-item > a span,
+.grid-item > a .text {
+  height: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 4px;
+  box-sizing: border-box;
+  font-family: "Kode Mono", monospace;
+  color: #812E2E;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+/* Text-only tiles fallback */
+.grid-item > a:not(:has(img)) {
+  align-items: center;
+  justify-content: center;
+}
+
+/* Responsive tweak: reduce height on small screens */
+@media (max-width: 480px) {
+  .grid-item { height: 180px; }
+  .grid-item > a img { height: 65%; }
+  .grid-item > a .label { font-size: 16px; }
+}
