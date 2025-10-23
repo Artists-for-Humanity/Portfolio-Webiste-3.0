@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Me</title>
+  <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .box {
+      background-color: #dcdcdc;
+      width: 47%;
+      min-height: 600px;
+      padding: 30px;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .contact-box {
+      min-height: 350px;
+      justify-content: flex-start;
+      align-items: center;
+      text-align: center;
+    }
+
+    .box h1, .box h2 {
+      font-size: 34px;
+      margin-bottom: 20px;
+    }
+
+    .box p {
+      font-size: 22px;
+      line-height: 1.6;
+      color: #222;
+      margin: 10px 0;
+    }
+
+    .contact-box p span {
+      font-weight: bold;
+      margin-right: 8px;
+    }
+
+    .contact-box .divider {
+      width: 60%;
+      height: 2px;
+      background-color: #999;
+      margin: 20px auto;
+    }
+
+    .contact-box img {
+      vertical-align: middle;
+      margin-right: 8px;
+      width: 24px;
+      height: 24px;
+    }
+
+    .content {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      padding: 40px;
+      flex-wrap: nowrap;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Make sure .navbar styling is in style.css -->
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="aboutme.html">About me</a>
+    <a href="projects.html">Projects</a>
+  </nav>
+
+  <section class="content">
+    <div class="box">
+      <h1>About Me</h1>
+      <p>Hello! My name is Mohamed Ibrahim. I’m a 17-year-old student with a big passion for design, cars, and video games.</p>
+    </div>
+
+    <div class="box contact-box">
+      <h2>📞 Contact Info</h2>
+      <div class="divider"></div>
+      <div class="contact-flex"> 
+        <div>📞 Phone: 857-389-8765 </div>
+      </div>
+      <p>
+        <img src="instagram.png" alt="Instagram" />
+        @mohworld_
+      </p>
+      <p>
+        <img src="discord.png" alt="Discord" />
+        moh.m3dd
+      </p>
+    </div>
+  </section>
+
+</body>
+</html>
