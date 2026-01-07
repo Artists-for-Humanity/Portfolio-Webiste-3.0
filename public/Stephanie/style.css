@@ -8,3 +8,27 @@ body {
   padding: 0;
   background: #8d1dbd;
 }
+
+.title {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  font-size: 128px;
+  justify-content: center;
+  align-items: center;
+}
+.homepage_font {
+  color: #b16cce;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.NavBar {
+  position: absolute;
+  display: grid;
+  justify-content: end;
+  align-items: center;
+  width: 100%;
+  font-size: 80px;
+  height: 100px;
+}
