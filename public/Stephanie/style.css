@@ -1,34 +1,114 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  max-width: 100vw;
+  overflow: hidden;
+  max-height: 100vh;
+}
 .jockey-one-regular {
   font-family: "Jockey One", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 body {
+  background: #8d1dbd;
   margin: 0;
   padding: 0;
-  background: #8d1dbd;
 }
 
 .title {
+  position: absolute;
   width: 100vw;
   height: 100vh;
-  display: flex;
   font-size: 128px;
+  font-weight: bold;
+  color: #b16cce;
+}
+
+.name_location {
+  display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .homepage_font {
   color: #b16cce;
   text-transform: uppercase;
   letter-spacing: 5px;
+  align-items: center;
 }
 
 .NavBar {
   position: absolute;
-  display: grid;
-  justify-content: end;
-  align-items: center;
+  display: flex;
+  flex-direction: column;
+  bottom: 30vh;
+  left: 0%;
+  align-items: end;
   width: 100%;
   font-size: 80px;
-  height: 100px;
+  gap: 5vh;
+  height: fit-content;
+  padding: 0% 5%;
+}
+
+.Icon_location {
+  margin: 8% 0%;
+  width: 100vw;
+  height: fit-content;
+  display: flex;
+  justify-content: space-around;
+}
+
+.email {
+  color: white;
+  font-size: 96px;
+  display: flex;
+  position: absolute;
+  width: 100vw;
+  height: fit-content;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.Projects {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-size: 80px;
+  color: white;
+  font-weight: bold;
+}
+
+.boxformat {
+  position: absolute;
+  left: 10vw;
+  top: 20vh;
+  width: 50vw;
+  height: fit-content;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5%;
+}
+
+.script {
+  color: white;
+  display: flex;
+  align-items: end;
+  font-size: 16px;
+}
+
+.aboutme {
+  display: flex;
+  justify-content: end;
+}
+.image_contain {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: end;
 }
