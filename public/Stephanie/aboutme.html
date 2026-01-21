@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -7,14 +7,19 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="title" style="display: flex; justify-content: center">
+    <div class="title fading_up" style="display: flex; justify-content: center">
       About Me
     </div>
     <div class="boxformat">
-      <div class="image_contain">
-        <img src="./assets/AboutMe.png" alt="" class="aboutme" />
+      <div class="image_contain fading_right">
+        <img
+          src="./assets/AboutMe.png"
+          draggable="false"
+          alt="AboutmePicture"
+          class="aboutme"
+        />
       </div>
-      <div class="script jockey-one-regular firstbox">
+      <div class="fading_right AboutText jockey-one-regular firstbox">
         <p>
           My name is Stephanie Soto Baez, im 15 years old , and i was born in
           the Dominican republic. I currently attend John D. O’Bryant school of
@@ -26,5 +31,6 @@
         </p>
       </div>
     </div>
+    <script src="script.js" type="module"></script>
   </body>
 </html>
