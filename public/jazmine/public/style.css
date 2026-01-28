@@ -1,0 +1,20 @@
+body {
+    background-image: url(xp.jpg);
+    background-size: cover;
+}
+
+#usahana {
+    position: absolute;
+    margin-top: 20px;
+    top: 40px;
+    left: 88px;
+}
+
+#delulus {
+    border-radius: 20px;
+}
+
+#pop-up {
+    padding-top: -300px;
+    padding-bottom: -10px;
+}
