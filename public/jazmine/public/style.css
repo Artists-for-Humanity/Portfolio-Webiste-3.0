@@ -22,7 +22,16 @@ body {
 
 #delulus {
     border-radius: 20px;
+    width: 370px;
 }
+
+#zombiku {
+    width: 150px;
+    height: 150px;
+}
+
+
+
 
 #pop-up {
     padding-top: -300px;
@@ -42,7 +51,7 @@ body {
 } */
 
 .block1 {
-    background: radial-gradient(#bec0b8 50%, #fff 50%);
+    background: radial-gradient(#fbfcfaea 50%, #fff 50%);
     background-size: 5px 5px;
     /* // animation: bscale 10s infinite linear */
     /* opacity: 0.5; */
