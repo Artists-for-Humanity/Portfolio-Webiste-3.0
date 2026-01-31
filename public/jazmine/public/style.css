@@ -50,6 +50,7 @@ body {
   display: inline-block;
 } */
 
+
 .block1 {
     background: radial-gradient(#fbfcfaea 50%, #fff 50%);
     background-size: 5px 5px;
@@ -61,4 +62,31 @@ body {
     height: 586px;
     overflow: scroll;
     max-height: 650px;
+}
+
+#pop-up {
+    width: 380px;
+}
+
+
+.window1 {
+    max-width: fit-content;
+
+}
+
+
+#placeholder {
+    /* max-width: 640px; */
+    max-width: fit-content;
+}
+
+.window2 {
+    height: 52px;
+    max-width: fit-content;
+}
+
+#home-button {
+    /* right: -517px; */
+    position: center;
+
 }
