@@ -86,7 +86,7 @@ body {
 }
 
 #home-button {
-    /* right: -517px; */
-    position: center;
+    right: -517px; 
+    /* position: center; */
 
 }
