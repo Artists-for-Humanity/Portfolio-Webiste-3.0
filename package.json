@@ -2,7 +2,7 @@
   "name": "portfolio-website-3.0",
   "version": "1.0.0",
   "scripts": {
-    "start": "live-server ."
+    "start": "live-server public --port=3000"
   },
   "devDependencies": {
     "http-server": "^14.1.1",
