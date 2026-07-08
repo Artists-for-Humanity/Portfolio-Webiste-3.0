@@ -85,11 +85,11 @@ body {
     max-width: fit-content;
 }
 
-#home-button {
-    right: -517px; 
+/* #home-button { */
+    /* right: -517px;  */
     /* position: center; */
 
-}
+/* } */
 
 .everything {
     display: flex;
