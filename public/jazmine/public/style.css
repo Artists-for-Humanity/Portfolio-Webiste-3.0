@@ -1,14 +1,9 @@
 body {
-    /* background-image: url(xp.jpg);
-    background-size: cover; */
-    /* background-repeat: no-repeat; */
-    /* background-color: blue; */
     background-size: cover;
     background-image: url(https://sweethard666.neocities.org/xp.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    /* width: 900px; */
     margin-top: 14px;
 
 }
@@ -34,8 +29,8 @@ body {
 }
 
 #zombiku {
-    width: 150px;
-    height: 150px;
+    width: 130px;
+    height: 130px;
 }
 
 
@@ -51,12 +46,6 @@ body {
     --w7-w-bg: #83a14c;
     margin: auto;
 }
-
-/* .block{
-  width: auto;
-  height: auto;
-  display: inline-block;
-} */
 
 
 .block1 {
@@ -83,21 +72,13 @@ body {
 }
 
 
-#placeholder {
-    /* max-width: 640px; */
-    max-width: fit-content;
-}
+
 
 .window2 {
     height: 52px;
     max-width: fit-content;
 }
 
-/* #home-button { */
-    /* right: -517px;  */
-    /* position: center; */
-
-/* } */
 
 .everything {
     display: flex;
@@ -113,3 +94,4 @@ body {
     position: relative;
     top: 100px;
 }
+
