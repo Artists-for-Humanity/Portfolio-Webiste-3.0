@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="https://unpkg.com/7.css" />
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" type="module"></script>
+</head>
+
+
+<body class="has-scrollbar" ontouchstart>
+    <body style="background-image: url('xp.jpg');">
+
+        <div class="window glass active">
+        <div class="title-bar" style="background-attachment: local;">
+        <div class="title-bar-text">About Me</div>
+            <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Maximize"></button>
+                <button aria-label="Close"></button>
+            </div>
+        </div>
+        </div>
+
+        <div class="window-body has-space has-scrollbar" style="overflow: scroll;">
+            <p>Placeholder</p>
+        </div>
+
+        <button>Home</button>
+
+
+    </body>
+</body>
+</html>
