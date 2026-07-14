@@ -16,6 +16,7 @@ body {
 #everything {
     display: block;
     position: absolute;
+    margin: auto;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -37,12 +38,20 @@ body {
 #navigation {
     height: fit-content;
     max-height: 70px;
+    width: 300px;
+    right: -565px;
+    top: -400px;
 }
 
+#navigation-body {
+    display: flex;
+    justify-content: center;
+}
 
 #sub-title {
     width: 400px;
     height: 400px;
+    bottom: -40px;
 }
 
 #sub-body {
@@ -54,4 +63,11 @@ body {
 #apple-banner {
     position: relative;
     width: 100%;
+}
+
+#usahana {
+    position: relative;
+    margin-top: 20px;
+    top: 25px;
+    left: 75px;
 }
