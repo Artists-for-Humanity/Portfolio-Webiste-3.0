@@ -16,7 +16,8 @@ body {
 #everything {
     display: block;
     position: absolute;
-    right: 430px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 
