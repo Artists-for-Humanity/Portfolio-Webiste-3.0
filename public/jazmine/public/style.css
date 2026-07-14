@@ -14,6 +14,7 @@ body {
 }
 
 #everything {
+    display: block;
     position: absolute;
     right: 430px;
 }
