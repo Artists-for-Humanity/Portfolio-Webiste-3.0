@@ -24,6 +24,11 @@ body {
 
 #title-bar {
     width: 922px;
+    display: block;
+    position: absolute;
+    margin: auto;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 
