@@ -88,7 +88,19 @@ body {
 #stamps {
     margin: auto;
     max-width: fit-content;
-    
+    cursor: pointer;
+}
+
+
+#clock {
+  background-color: var(--light);
+  padding: 5px;
+  margin-top: 1px;
+  margin-right: 10px;
+  border: 2px solid var(--lightest);
+  border-left: 2px solid var(--darkest);
+  border-top: 2px solid var(--darkest);
+  font-weight: 200;
 }
 
 
