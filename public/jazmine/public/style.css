@@ -13,6 +13,7 @@ body {
 
 }
 
+
 #everything {
     display: block;
     position: absolute;
@@ -40,6 +41,7 @@ body {
     background-size: 5px 5px;
 }
 
+
 #navigation {
     height: fit-content;
     max-height: 70px;
@@ -48,10 +50,12 @@ body {
     top: -400px;
 }
 
+
 #navigation-body {
     display: flex;
     justify-content: center;
 }
+
 
 #sub-title {
     width: 400px;
@@ -59,16 +63,19 @@ body {
     bottom: -40px;
 }
 
+
 #sub-body {
     width: 373px;
     height: 350px;
     bottom: -30px;
 }
 
+
 #apple-banner {
     position: relative;
     width: 100%;
 }
+
 
 #usahana {
     position: relative;
@@ -76,3 +83,9 @@ body {
     top: 25px;
     left: 75px;
 }
+
+
+#stamps {
+    max-width: fit-content;
+}
+
