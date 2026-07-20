@@ -8,19 +8,21 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js" type="module"></script>
 </head>
-<body class="has-scrollbar" ontouchstart>
+
+
+<body class="has-scrollbar" style="overflow:auto;" ontouchstart>
     <body style="background-image: url('xp.jpg');">
 
-    <div class="window glass active">
-    <div class="title-bar" style="background-attachment: local;">
-    <div class="title-bar-text">Projects</div>
-    <div class="title-bar-controls">
-        <button aria-label="Minimize"></button>
-        <button aria-label="Maximize"></button>
-        <button aria-label="Close"></button>
+    <div id="everything"  class="window glass active">
+        <div id="title-bar" class="title-bar" style="background-attachment: local;">
+            <div class="title-bar-text">Projects</div>
+            <div class="title-bar-controls">
+            <button aria-label="Minimize"></button>
+            <button aria-label="Maximize"></button>
+            <button aria-label="Close"></button>
+            </div>
     </div>
-    </div>
-    </div>
+    
     
     <div id="fullbody"  class="window-body has-space has-scrollbar" style="overflow: scroll;">
         <p>It's so quiet here....</p>
@@ -30,7 +32,7 @@
 
 
 
-
+    </div>
     </body>
 </body>
 </html>
