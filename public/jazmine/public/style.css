@@ -1,18 +1,5 @@
-
-
-/* .draggable {
-    position: absolute;
-    z-index: 1000;
-}  */
-
-
 :root {
     text-transform: lowercase;
-}
-
-
-.show {
-  display: block;
 }
 
 
@@ -27,7 +14,6 @@ body {
 
 
 #everything {
-    display: block;
     position: absolute;
     margin: auto;
     left: 50%;
@@ -37,12 +23,10 @@ body {
 
 #bar-style {
     width: 922px;
-    display: block;
     position: absolute;
     margin: auto;
     left: 50%;
     transform: translateX(-50%);
-    cursor: pointer;
 
 }
 
@@ -106,7 +90,6 @@ body {
 }
 
 #stamp-space {
-    flex-direction: row;
 }
 
 #clock {
