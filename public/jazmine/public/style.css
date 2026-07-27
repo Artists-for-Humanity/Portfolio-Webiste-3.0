@@ -1,14 +1,18 @@
-@font-face {
-    font-family: 'PixelOperator';
-    src: url(Resources/PixelOperator.ttf);
-    font-weight: normal;
-    font-style: normal;
-}
 
+
+.draggable {
+    position: absolute;
+    z-index: 1000;
+} 
 
 
 :root {
     text-transform: lowercase;
+}
+
+
+.show {
+  display: block;
 }
 
 
@@ -31,13 +35,15 @@ body {
 }
 
 
-#title-bar {
-    width: 922px;
+.title-bar {
+    /* width: 922px;
     display: block;
     position: absolute;
     margin: auto;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%); */
+    cursor: pointer;
+
 }
 
 
