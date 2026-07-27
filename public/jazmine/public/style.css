@@ -1,6 +1,8 @@
 @font-face {
-    font-family: 'CustomFont';
-    src: url(PixelOperator.ttf) format("truetype");
+    font-family: 'PixelOperator';
+    src: url(Resources/PixelOperator.ttf);
+    font-weight: normal;
+    font-style: normal;
 }
 
 
@@ -17,8 +19,6 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     margin-top: 100px;
-    font-family: 'CustomFont', Aria;
-
 }
 
 
