@@ -12,6 +12,10 @@ body {
     margin-top: 100px;
 }
 
+.to-drag {
+    position: absolute;
+    z-index: 1000;
+}
 
 #everything {
     position: absolute;
@@ -89,8 +93,6 @@ body {
     cursor: pointer;
 }
 
-#stamp-space {
-}
 
 #clock {
   background-color: #7092a1ea;
