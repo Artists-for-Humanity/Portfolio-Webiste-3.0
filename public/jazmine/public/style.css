@@ -7,3 +7,11 @@ body {
     margin-top: 100px;
 }
 
+#Main-Menu {
+    max-width: 980px;
+    max-height: fit-content;
+}
+
+#Navigation {
+    max-width: fit-content;
+}
