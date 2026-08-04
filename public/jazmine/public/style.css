@@ -23,6 +23,11 @@ body {
     max-width: fit-content;
 }
 
-#Image {
+ #Image {
     max-width: fit-content;
+}
+
+#Delulus {
+    border-radius: 20px;
+    width: 370px;
 }
