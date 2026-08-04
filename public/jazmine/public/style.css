@@ -18,6 +18,11 @@ body {
     transform: translateX(-50%);
 }
 
+
 #Navigation {
+    max-width: fit-content;
+}
+
+#Image {
     max-width: fit-content;
 }
