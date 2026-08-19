@@ -14,7 +14,7 @@ body {
 
 
 #Main-Menu {
-    width: 860px;
+    width: 760px;
 
 
     position: absolute;
@@ -34,7 +34,19 @@ body {
 }
 
 #Image {
-    width: 200px;
+    width: 269px;
+    transform: translateX(89%);
+}
+
+#Usahana {
+    transform: translateX(106%);
+
+}
+
+#Kuroi-Neko {
+    margin-top: 10px;
+    transform: translateX(110%);
+
 }
 
 #Delulus {
