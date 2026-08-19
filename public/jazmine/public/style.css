@@ -9,13 +9,18 @@ body {
 
 
 #Main-Menu {
-    width: 980px;
-    max-height: fit-content;
+    width: 860px;
+
 
     position: absolute;
     margin: auto;
     left: 50%;
     transform: translateX(-50%);
+}
+
+
+#Main-Menu-Body {
+    height: fit-content;
 }
 
 
@@ -30,4 +35,12 @@ body {
 #Delulus {
     border-radius: 20px;
     width: 370px;
+}
+
+.footer {
+    position: relative;
+}
+
+#Clock {
+    position:fixed;
 }
